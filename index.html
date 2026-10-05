@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LaPanda IDM &mdash; Windows download manager. One-time licence, &#8377;575.18</title>
+<meta name="description" content="LaPanda IDM is a Windows download manager that splits large files across parallel connections, resumes from the last completed byte range, and validates every byte range before accepting it. One-time licence &#8377;575.18 (about US$6), no account, no telemetry, 30-day trial. Priced for India.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="Zerith Studio">
+<meta name="theme-color" content="#131315">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="assets/logo.png" type="image/png">
+
+<!-- Open Graph / social. og:image is relative; replace with an absolute URL
+     when the final domain is known. See the deployment checklist below. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LaPanda IDM">
+<meta property="og:title" content="LaPanda IDM &mdash; Windows download manager. Pay once.">
+<meta property="og:description" content="Parallel segmented downloads with true per-range resume and ETag validation. &#8377;575.18 once per computer. No account, no telemetry, 30-day full trial.">
+<meta property="og:image" content="assets/01-dashboard.png">
+<meta property="og:locale" content="en_IN">
+
+<!--
+  DEPLOYMENT CHECKLIST - do these once the final domain is set:
+    <link rel="canonical" href="https://DOMAIN/">
+    <meta property="og:url" content="https://DOMAIN/">
+    Sitemap: add the absolute URL to robots.txt and ship sitemap.xml.
+  This is a single-language page, so no hreflang alternates are needed. If
+  regional pages are ever added, each must carry a self-referencing canonical.
+-->
+
+<!-- ============================ structured data ============================
+     Machine-readable product data for search engines. This is data, not
+     executable script. Every claim here is mirrored by visible page content,
+     and every FAQ question below appears verbatim as a summary element in the
+     section. Non-ASCII characters are written as JSON \u escapes because
+     script content is not HTML-entity decoded. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "#org",
+      "name": "Zerith Studio",
+      "email": "studiozerith@gmail.com"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "#app",
+      "name": "LaPanda IDM",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Download manager",
+      "operatingSystem": "Windows 10, Windows 11 (x64)",
+      "softwareVersion": "1.0.0",
+      "softwareRequirements": ".NET 8 Desktop Runtime (x64)",
+      "fileSize": "2218463",
+      "downloadUrl": "downloads/LaPandaIDM-1.0.0-setup.exe",
+      "installUrl": "downloads/LaPandaIDM-1.0.0-setup.exe",
+      "description": "Download manager for Windows 10 and 11 (x64). Splits large HTTP and HTTPS downloads across parallel byte-range connections, re-divides the remaining work while the transfer runs, resumes from the last completed byte range after an interruption, and validates ETag and Content-Range before accepting resumed data. Includes per-range retry with stall detection, a global bandwidth cap, a scheduled start and stop window, authenticated HTTP proxy support, automatic file categorisation and a Windows Defender scan on completion. Requires no account and sends no telemetry.",
+      "isAccessibleForFree": false,
+      "inLanguage": "en-IN",
+      "author": { "@id": "#org" },
+      "areaServed": { "@type": "Country", "name": "India" },
+      "availableLanguage": { "@type": "Language", "name": "English" },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Perpetual licence, one computer, India",
+          "price": "575.18",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "eligibleRegion": { "@type": "Country", "name": "India" },
+          "seller": { "@id": "#org" },
+          "description": "One-time payment for a perpetual licence on one computer. No renewal, no subscription.",
+          "warranty": "Email support and free updates for the life of the product"
+        },
+        {
+          "@type": "Offer",
+          "name": "Perpetual licence, one computer, international reference price",
+          "price": "6.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "seller": { "@id": "#org" },
+          "description": "Approximate US dollar equivalent of the India list price, shown for reference only. Sales are settled in Indian rupees; contact the vendor for terms in other regions."
+        }
+      ],
+      "featureList": [
+        "Parallel segmented HTTP and HTTPS downloads with up to 8 connections per file",
+        "Range plan re-divided while the transfer is running",
+        "Per-range resume state written to disk every 2 seconds",
+        "ETag and Last-Modified plus Content-Range validation on resume",
+        "Per-range retry with a 5-step backoff and 30-second stall detection",
+        "Global bandwidth cap in KB per second",
+        "Scheduled daily start and stop window",
+        "HTTP proxy with username and password authentication",
+        "Automatic file categorisation on completion",
+        "Windows Defender scan on completion",
+        "Drag-and-drop queue and per-download connection detail view",
+        "ECDSA-signed offline activation, no account, no telemetry",
+        "30-day trial of the full application"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much is it, and is it a subscription?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u20b9575.18 once, about US$6, for one computer. It is not a subscription. The licence does not expire, is never renewed, and updates are free for the life of the product."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can buy it? I am not in India.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The price on this page is set for India, and this page is published worldwide, so you may well be reading it from another country. The trial runs anywhere: it is the same binary and it does not check your location. Purchasing and support are handled for Indian customers. If you are outside India, email us before paying. We will quote in your currency if we can supply you, and we will tell you plainly if we cannot."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an account or an email address to use it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No account, ever. You do need an email address to buy a licence, because that is how the key reaches you. Nothing is stored in the application, and there is no sign-in screen to get past."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it send anything about me to the vendor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. There is no analytics, no crash reporting, and no remote licence check. Activation is a local cryptographic signature check, and the application contains no code path that phones home. The only outbound traffic is to the hosts you download from, plus the official Microsoft runtime installer if you accept that offer during setup."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the trial restricted in any way?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The 30-day trial is the full application with every feature enabled. It is a time limit, not a reduced build, and there is no connection cap to unlock. The clock starts when you first run the application, and reinstalling does not reset it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will multi-connection downloading really make my download faster?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sometimes, and it depends on three things you control only partly. When the origin advertises HTTP range support, a single connection is often limited by latency and by per-connection shaping, so splitting a large file across several byte ranges uses more of the available bandwidth. The gain is largest on large files over connections that shape per stream. On small files, on a link that is already saturated, or against a server without range support, there is little or nothing to gain. LaPanda IDM probes for range support before it starts and shows you what it found."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it genuinely resume, or does it quietly start over?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It resumes. Progress for each byte range is written to a small state file beside the download every two seconds, so a crash, a power cut or a reboot costs you seconds of work rather than the whole file. It also checks before it trusts. Resume sends the ETag or Last-Modified of the file it started on as If-Range, and only accepts a 206 response whose Content-Range begins exactly where it asked. If the file on the server has been replaced, the partial data is thrown away and the download restarts, rather than appending two different versions into a file that looks finished and is not."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does every download show a different number of connections?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the decision is made per file, from what the server actually said. Files below about 256 KB, and any file from a server that does not advertise range support, are fetched on a single connection because splitting them would not help. Above that, connections are capped at twice your logical processor count, so on a four-core machine the maximum is 8 no matter what the setting says."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you support torrents, magnet links and Metalink files?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not in version 1.0. The BitTorrent, magnet link and Metalink engines are written in this codebase, including metainfo and bencode parsing, HTTP and UDP tracker announces, the peer wire protocol, piece hashing, magnet metadata retrieval and multi-mirror resolution, but they are not reachable from the interface yet, so the shipping application downloads HTTP and HTTPS URLs only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is this different from Internet Download Manager?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The transfer mechanisms are comparable in design: segmented downloads, a range plan that adapts while running, and resume validation. The differences are commercial and in scope. LaPanda IDM is a one-time \u20b9575.18 licence that never renews, with no account, no telemetry, Windows only, and an honest list of what is missing. Internet Download Manager is an annual licence tied to a registered email address, plus browser integration, video capture, torrent support and a macOS build, with two decades of refinement behind it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does Windows warn me that the installer is from an unknown publisher?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because version 1.0 is not code-signed. A code-signing certificate is an annual cost that a first release from a small vendor often defers, and we would rather be explicit about it than have the warning look like something is wrong. To verify you have the file we published, compare the SHA-256 checksum listed in the pricing section with your downloaded file. If they match, it is our build. Choose More info, then Run anyway, to proceed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I move my licence to a new computer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A licence is bound to one computer, identified by a machine ID built from your BIOS strings and the system volume serial number. The MAC address is deliberately excluded, because a laptop that switches between Wi-Fi and Ethernet would otherwise lose its licence. A Windows reinstall on the same hardware keeps your licence. New or replaced hardware needs a reissued key: email us the new machine ID and we will issue it at no charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to my data if I uninstall?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Uninstalling removes the program. Because your queue, settings and licence key live in the IDM folder under your user profile rather than in the install folder, the uninstaller asks whether to delete them too. Keeping them is the right choice if you intend to reinstall. Nothing is retained on any server, because there is no server."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are updates included, and will 2.0 cost more?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Updates for version 1.x are included at no charge and sent by email with release notes. We cannot promise in writing that a future major version will be free, but we will not retroactively withdraw features you paid for, and any upgrade path will be published in advance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the refund terms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Refunds are considered case by case within 30 days of purchase. Contact us with the reason, your order email address and your machine ID. Beyond 30 days a licence is not refundable, although a defect that makes the application unusable is addressed under the licence terms."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+/* ==========================================================================
+   Design tokens
+   ========================================================================== */
+:root{
+  --bg:#131315;
+  --bg-2:#16161a;
+  --surface:#1e1e21;
+  --surface-2:#26262b;
+  --surface-3:#2e2e34;
+  --line:#34343c;
+  --line-soft:#28282e;
+  --text:#ededee;
+  --muted:#a4a4ae;
+  --faint:#90909b;
+  --accent:#7cb0ff;
+  --accent-2:#9ec5ff;
+  --accent-ink:#0b0f16;
+  --accent-dim:#26385a;
+  --ok:#63d69b;
+  --warn:#e0b355;
+  --info:#7cb0ff;
+
+  --max:1160px;
+  --narrow:820px;
+  --radius:12px;
+  --radius-sm:8px;
+}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:84px}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline} /* A link inside running text must be identifiable without relying on colour alone. Standalone interface links (nav, footer list, buttons, brand) keep their own treatment and are excluded. */ p a,li a,dd a,td a,th a,caption a,figcaption a,summary a,.a a,.legal a,.buy-region a,.cta-note a{ text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2.5px; } nav a,.nav-cta,.foot-links a,.brand,.btn,.skip{text-decoration:none}
+h1,h2,h3,h4{letter-spacing:-.02em;line-height:1.2}
+p{margin:0 0 1em}
+p:last-child{margin-bottom:0}
+ul,ol{margin:0}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:.88em}
+code{background:var(--surface-2);border:1px solid var(--line);border-radius:4px;padding:1px 5px;white-space:nowrap}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px;width:100%}
+.narrow{max-width:var(--narrow)}
+.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+.muted{color:var(--muted)}
+.nowrap{white-space:nowrap}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+.skip{position:absolute;left:-9999px;top:0;z-index:200;background:var(--accent);color:var(--accent-ink);padding:12px 18px;border-radius:0 0 var(--radius-sm) 0;font-weight:650}
+.skip:focus{left:0}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+header{
+  position:sticky;top:0;z-index:80;
+  background:rgba(19,19,21,.9);backdrop-filter:saturate(160%) blur(12px);
+  -webkit-backdrop-filter:saturate(160%) blur(12px);
+  border-bottom:1px solid var(--line-soft);
+}
+.bar{display:flex;align-items:center;gap:18px;height:66px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:660;font-size:17px;color:var(--text);letter-spacing:-.015em;flex:none}
+.brand:hover{text-decoration:none}
+.brand img{width:28px;height:28px;border-radius:7px}
+.brand small{display:block;font-weight:450;font-size:11px;color:var(--faint);letter-spacing:.02em;line-height:1.1}
+
+.navtoggle{
+  display:none;margin-left:auto;background:var(--surface-2);border:1px solid var(--line);
+  color:var(--text);border-radius:var(--radius-sm);padding:8px 12px;font:inherit;font-size:14px;cursor:pointer;
+}
+.navtoggle:hover{background:var(--surface-3)}
+nav{display:flex;align-items:center;gap:4px;margin-left:auto}
+nav a{
+  color:var(--muted);font-size:14.5px;padding:9px 11px;border-radius:6px;
+  display:inline-block;text-decoration:none;
+}
+nav a:hover{color:var(--text);background:var(--surface-2);text-decoration:none}
+
+.regionchip{
+  display:inline-flex;align-items:center;gap:7px;flex:none;
+  background:var(--surface-2);border:1px solid var(--line);color:var(--muted);
+  border-radius:999px;padding:7px 12px;font:inherit;font-size:13px;cursor:pointer;
+  white-space:nowrap;
+}
+.regionchip:hover{background:var(--surface-3);color:var(--text)}
+.regionchip::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ok);flex:none}
+.regionchip[data-region="OTHER"]::before{background:var(--warn)}
+.regionchip:focus-visible{outline-offset:2px}
+
+.nav-cta{
+  background:var(--accent);color:var(--accent-ink)!important;font-weight:620;
+  padding:10px 16px;border-radius:var(--radius-sm);font-size:14.5px;flex:none;
+}
+.nav-cta:hover{background:var(--accent-2);text-decoration:none}
+
+/* ==========================================================================
+   Region bar
+   ========================================================================== */
+.regionbar{background:var(--surface);border-bottom:1px solid var(--line);font-size:14.5px}
+.regionbar-in{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding-top:13px;padding-bottom:13px}
+.regionbar p{margin:0;flex:1 1 340px;min-width:0}
+.regionbar b{font-weight:640}
+.regionbar-actions{display:flex;gap:9px;flex:none}
+.regionbar-actions button{
+  font:inherit;font-size:14px;font-weight:560;cursor:pointer;
+  background:var(--surface-2);color:var(--text);border:1px solid var(--line);
+  border-radius:var(--radius-sm);padding:8px 14px;
+}
+.regionbar-actions button:hover{background:var(--surface-3)}
+.regionbar-actions button[data-region="IN"]{border-color:#3a4c6b;background:var(--accent-dim);color:#d8e7ff}
+
+.regionnote{
+  display:flex;gap:13px;align-items:flex-start;
+  background:rgba(224,179,85,.06);border:1px solid rgba(224,179,85,.28);
+  border-left:3px solid var(--warn);border-radius:var(--radius-sm);
+  padding:16px 19px;margin:0 0 26px;font-size:15px;color:var(--muted);
+}
+.regionnote svg{width:19px;height:19px;flex:none;margin-top:2px;stroke:var(--warn);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.regionnote b{color:var(--text);font-weight:620}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:13px 22px;border-radius:var(--radius-sm);font-size:15.5px;font-weight:600;
+  border:1px solid transparent;cursor:pointer;text-decoration:none;
+  transition:background .14s ease,border-color .14s ease,color .14s ease;
+  line-height:1.3;
+}
+.btn:hover{text-decoration:none}
+.btn svg{width:17px;height:17px;flex:none;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{background:var(--accent-2)}
+.btn-ghost{border-color:var(--line);color:var(--text);background:var(--surface)}
+.btn-ghost:hover{background:var(--surface-2);border-color:#4a4a55}
+.btn-sm{padding:9px 15px;font-size:14px}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+.hero{padding:76px 0 68px;border-bottom:1px solid var(--line-soft);position:relative;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:-45% 45% auto -12%;height:560px;pointer-events:none;
+  background:radial-gradient(closest-side,rgba(124,176,255,.11),transparent 70%);
+}
+.hero-in{position:relative;display:grid;grid-template-columns:1.04fr .96fr;gap:60px;align-items:center}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--muted);background:var(--surface-2);
+  border:1px solid var(--line);border-radius:999px;padding:5px 14px;margin-bottom:24px;
+}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--ok);flex:none}
+
+h1{margin:0 0 20px;font-size:clamp(34px,5.1vw,54px);line-height:1.07;letter-spacing:-.032em;font-weight:700}
+.lede{font-size:clamp(16.5px,2vw,19.5px);color:var(--muted);max-width:60ch;margin:0 0 30px}
+.cta{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:15px}
+.cta-note{margin:0 0 28px;color:var(--faint);font-size:13.5px;line-height:1.6}
+
+.price-block{
+  display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  padding-top:24px;border-top:1px solid var(--line-soft);
+}
+.price{font-size:33px;font-weight:700;letter-spacing:-.028em}
+.price-note{color:var(--muted);font-size:14.5px}
+
+.facts{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:28px 0 0;padding:0;
+  background:var(--line-soft);border:1px solid var(--line-soft);border-radius:10px;overflow:hidden;
+}
+.facts>div{background:var(--bg);padding:13px 15px}
+.facts dt{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);margin-bottom:4px}
+.facts dd{margin:0;font-size:14.5px;font-weight:560;color:var(--text);line-height:1.35}
+
+/* hero visual - segmented transfer diagram */
+.viz{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.viz-t{font-size:12.5px;color:var(--faint);margin-bottom:16px;letter-spacing:.04em;text-transform:uppercase}
+.segbar{display:flex;gap:3px;height:34px;margin-bottom:7px}
+.seg{flex:1;background:var(--surface-2);border-radius:3px;position:relative;overflow:hidden}
+.seg i{position:absolute;inset:0;width:0;background:linear-gradient(180deg,#7cb0ff,#5b8fe0);border-radius:3px;display:block}
+/* Widths are a worked example, not a measurement: (3 x 100 + 88 + 74 + 61 + 47 + 30) / 8 = 75%.
+   Keep the CSS and the "75%" figure in sync if you change either. */
+.seg.done i{width:100%}
+.seg.a i{width:88%}.seg.b i{width:74%}.seg.c i{width:61%}
+.seg.d i{width:47%}.seg.e i{width:30%}
+.viz-meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--faint);margin-top:14px}
+.viz-meta b{color:var(--text);font-weight:620}
+.viz-legend{
+  display:flex;gap:16px;font-size:12.5px;color:var(--faint);margin-top:14px;padding-top:14px;
+  border-top:1px solid var(--line-soft);flex-wrap:wrap;
+}
+.viz-legend span{display:flex;align-items:center;gap:7px}
+.sw{width:9px;height:9px;border-radius:2px;background:linear-gradient(180deg,#7cb0ff,#5b8fe0);display:block;flex:none}
+.sw.partial{background:var(--surface-2);border:1px solid var(--line)}
+
+/* ==========================================================================
+   Trust strip
+   ========================================================================== */
+.trust{background:var(--bg-2);border-bottom:1px solid var(--line-soft)}
+.trust-in{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line-soft)}
+.trust-in>div{background:var(--bg-2);padding:20px 18px}
+.trust-in svg{width:20px;height:20px;stroke:var(--ok);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-bottom:11px}
+.trust-in b{display:block;font-size:14.5px;font-weight:620;margin-bottom:4px}
+.trust-in span{font-size:13.5px;color:var(--faint);line-height:1.5;display:block}
+
+/* ==========================================================================
+   Section furniture
+   ========================================================================== */
+section{padding:76px 0;border-bottom:1px solid var(--line-soft)}
+section.tight{padding:60px 0}
+.sec-head{max-width:70ch;margin-bottom:42px}
+h2{margin:0 0 13px;font-size:clamp(24px,3.3vw,33px);line-height:1.18;font-weight:680;letter-spacing:-.024em}
+h3{margin:0;font-size:16.5px;font-weight:640}
+h4{margin:0;font-size:15px;font-weight:640}
+.sec-head p{margin:0;color:var(--muted);font-size:17px;max-width:66ch}
+.kicker{color:var(--faint);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;display:block;font-weight:600}
+.lede-sm{color:var(--muted);font-size:16px}
+
+/* ==========================================================================
+   Cards
+   ========================================================================== */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(288px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:25px 25px 27px}
+.card p{margin:9px 0 0;color:var(--muted);font-size:15px;line-height:1.62}
+.card .ico{
+  width:34px;height:34px;border-radius:8px;background:var(--accent-dim);
+  display:flex;align-items:center;justify-content:center;margin-bottom:15px;
+}
+.card .ico svg{width:17px;height:17px;stroke:#c3dbff;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.card ul{margin:11px 0 0;padding-left:19px;color:var(--muted);font-size:14.8px;line-height:1.6}
+.card li{margin-bottom:7px}
+.card li:last-child{margin-bottom:0}
+.card li b{color:var(--text);font-weight:600}
+
+/* ==========================================================================
+   Capability matrix
+   ========================================================================== */
+.capgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+.cap{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:26px 26px 24px}
+.cap-head{display:flex;align-items:center;gap:11px;margin-bottom:6px}
+.cap-head .ico{width:30px;height:30px;border-radius:7px;background:var(--accent-dim);display:flex;align-items:center;justify-content:center;flex:none}
+.cap-head .ico svg{width:16px;height:16px;stroke:#c3dbff;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.cap-head h3{font-size:16px}
+.cap-desc{margin:0 0 16px;color:var(--faint);font-size:13.8px;line-height:1.55}
+.cap ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-soft)}
+.cap li{padding:12px 0;border-bottom:1px solid var(--line-soft);font-size:14.6px;color:var(--muted);line-height:1.55}
+.cap li:last-child{border-bottom:none;padding-bottom:0}
+.cap li b{display:block;color:var(--text);font-weight:600;margin-bottom:3px}
+
+/* in-development disclosure */
+.indev{
+  margin-top:22px;background:var(--surface);border:1px solid var(--line);
+  border-left:3px solid var(--info);border-radius:var(--radius);padding:26px 28px;
+}
+.indev h3{margin:0 0 8px;font-size:17px}
+.indev>p{margin:0 0 18px;color:var(--muted);font-size:15px;max-width:78ch}
+.indev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:14px}
+.indev-item{background:var(--bg-2);border:1px solid var(--line-soft);border-radius:var(--radius-sm);padding:16px 18px}
+.indev-item h4{margin-bottom:5px}
+.indev-item h4 span{
+  display:inline-block;margin-left:8px;font-size:10.5px;font-weight:650;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--warn);background:rgba(224,179,85,.11);
+  border:1px solid rgba(224,179,85,.25);border-radius:4px;padding:2px 6px;vertical-align:1px;
+}
+.indev-item p{margin:0;color:var(--muted);font-size:14px;line-height:1.58}
+.indev-foot{margin:18px 0 0;padding-top:16px;border-top:1px solid var(--line-soft);color:var(--faint);font-size:13.8px;line-height:1.6;max-width:82ch}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+.tblwrap{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface)}
+.scrollx{overflow-x:auto}
+.tbl{width:100%;border-collapse:collapse;font-size:15px}
+.tbl th,.tbl td{text-align:left;padding:13px 17px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+.tbl thead th{
+  background:var(--surface-2);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--faint);font-weight:640;
+}
+.tbl th[scope="row"]{color:var(--text);font-weight:540;white-space:nowrap}
+.tbl td{color:var(--muted);line-height:1.6}
+.tbl tr:last-child td,.tbl tr:last-child th{border-bottom:none}
+.tbl code{white-space:normal}
+.tblfoot{margin:16px 0 0;font-size:13.6px;color:var(--faint);max-width:82ch;line-height:1.62}
+
+table.cmp{min-width:680px}
+table.cmp td:first-child,table.cmp th[scope="row"]{width:36%;color:var(--muted);font-weight:400}
+table.cmp thead th.us{color:var(--accent)}
+table.cmp td.us{color:var(--text);background:rgba(124,176,255,.05)}
+.yes{color:var(--ok);font-weight:700}
+.no{color:var(--faint)}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+.panel{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:26px}
+.panel.us{border-top:2px solid var(--accent)}
+.panel.them{border-top:2px solid var(--warn)}
+.panel h3{margin:0 0 15px;font-size:16px;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.pill{font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:5px;background:var(--surface-2);color:var(--faint);font-weight:640}
+.panel.us .pill{color:var(--accent);background:var(--accent-dim)}
+.panel.them .pill{color:var(--warn);background:rgba(224,179,85,.1)}
+.panel ul{margin:0;padding-left:19px;color:var(--muted);font-size:14.8px}
+.panel li{margin-bottom:10px;line-height:1.55}
+.panel li:last-child{margin-bottom:0}
+.panel li b{color:var(--text);font-weight:600}
+
+/* ==========================================================================
+   Screenshot
+   ========================================================================== */
+.cols{display:grid;grid-template-columns:1.32fr .68fr;gap:42px;align-items:start}
+.shot{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface)}
+.shot-bar{display:flex;align-items:center;gap:7px;padding:11px 14px;border-bottom:1px solid var(--line-soft);background:var(--surface-2)}
+.shot-bar i{width:10px;height:10px;border-radius:50%;background:#3d3d45;display:block;flex:none}
+.shot-bar span{margin-left:9px;font-size:12.5px;color:var(--faint)}
+figcaption{margin:15px 0 0;font-size:13.8px;color:var(--faint);line-height:1.6}
+.specs{list-style:none;margin:0;padding:0}
+.specs li{padding:12px 0;border-bottom:1px solid var(--line-soft);font-size:14.5px;color:var(--muted);display:flex;justify-content:space-between;gap:16px}
+.specs li:first-child{padding-top:0}
+.specs li:last-child{border-bottom:none}
+.specs li b{color:var(--text);font-weight:560;text-align:right}
+
+/* ==========================================================================
+   Steps
+   ========================================================================== */
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(258px,1fr))}
+ol.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:24px}
+ol.steps li::before{
+  content:counter(s);display:flex;align-items:center;justify-content:center;width:27px;height:27px;
+  border-radius:6px;background:var(--accent-dim);color:#cfe0ff;font-size:13.5px;font-weight:660;margin-bottom:15px;
+}
+ol.steps h3{margin:0 0 8px;font-size:16px}
+ol.steps p{margin:0;color:var(--muted);font-size:14.8px;line-height:1.6}
+
+ol.vertical{counter-reset:v;display:grid;gap:14px}
+ol.vertical li{counter-increment:v;position:relative;padding-left:44px}
+ol.vertical li::before{position:absolute;left:0;top:0;margin-bottom:0}
+
+/* ==========================================================================
+   Callouts
+   ========================================================================== */
+.callout{
+  background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:var(--radius-sm);padding:22px 24px;
+}
+.callout h3{margin:0 0 10px;font-size:15.5px}
+.callout ul,.callout ol{margin:0;padding-left:20px;color:var(--muted);font-size:14.8px;line-height:1.6}
+.callout li{margin-bottom:8px}
+.callout li:last-child{margin-bottom:0}
+.callout li b{color:var(--text);font-weight:600}
+.callout.warn{border-left-color:var(--warn)}
+.callout.ok{border-left-color:var(--ok)}
+
+.checksum{margin-top:20px;background:var(--bg-2);border:1px solid var(--line-soft);border-radius:var(--radius-sm);padding:16px 18px}
+.checksum h4{margin:0 0 10px;font-size:13.5px}
+.hashrow{display:flex;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.hashrow code{
+  flex:1 1 380px;min-width:0;background:var(--surface);border:1px solid var(--line);
+  border-radius:5px;padding:9px 11px;font-size:12.5px;line-height:1.55;
+  color:#b9cbe6;word-break:break-all;white-space:normal;
+}
+.copybtn{
+  flex:none;background:var(--surface-2);border:1px solid var(--line);color:var(--muted);
+  border-radius:5px;padding:9px 13px;font:inherit;font-size:13px;cursor:pointer;
+}
+.copybtn:hover{background:var(--surface-3);color:var(--text)}
+.copybtn[data-copied]{color:var(--ok);border-color:#2f5a48}
+
+/* ==========================================================================
+   FAQ
+   ========================================================================== */
+.faq{max-width:900px}
+details{border-bottom:1px solid var(--line-soft);padding:20px 0}
+details:first-of-type{border-top:1px solid var(--line-soft)}
+summary{
+  cursor:pointer;font-weight:580;font-size:16px;list-style:none;
+  display:flex;justify-content:space-between;gap:18px;align-items:flex-start;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--faint);font-weight:400;font-size:21px;line-height:1;flex-shrink:0}
+details[open] summary::after{content:"\2212"}
+details[open] summary{color:var(--text)}
+details .a{margin:14px 0 0;color:var(--muted);font-size:15px;max-width:76ch;line-height:1.65}
+details .a b{color:var(--text);font-weight:600}
+
+/* ==========================================================================
+   Trial split
+   ========================================================================== */
+.trialsplit{display:grid;grid-template-columns:1.08fr .92fr;gap:38px;align-items:start}
+.trial-points{list-style:none;margin:0 0 26px;padding:0;display:grid;gap:10px}
+.trial-points li{color:var(--muted);font-size:15.2px;display:flex;gap:10px;align-items:flex-start;line-height:1.55}
+.trial-points li::before{content:"\2713";color:var(--ok);font-weight:700;flex:none;line-height:1.5}
+.trialside{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:var(--radius);padding:26px 28px}
+.trialside h3{margin:0 0 10px;font-size:16px}
+.trialside p{margin:0 0 14px;color:var(--muted);font-size:14.8px;line-height:1.62}
+.trialside ul{margin:0 0 16px;padding-left:19px;color:var(--muted);font-size:14.6px;line-height:1.58}
+.trialside li{margin-bottom:9px}
+.trialside li:last-child{margin-bottom:0}
+.trialside li b{color:var(--text);font-weight:600}
+.trialside .foot{margin:0;padding-top:14px;border-top:1px solid var(--line-soft);font-size:13.6px;color:var(--faint);line-height:1.6}
+
+/* ==========================================================================
+   Pricing / buy
+   ========================================================================== */
+.buy{
+  background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:44px;
+  display:grid;grid-template-columns:1fr auto;gap:44px;align-items:center;
+}
+.buy h2{margin:0 0 12px}
+.buy p{margin:0 0 18px;color:var(--muted);max-width:56ch;font-size:15.5px}
+.buy-points{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:9px}
+.buy-points li{color:var(--muted);font-size:14.8px;display:flex;gap:10px;align-items:flex-start;line-height:1.55}
+.buy-points li::before{content:"\2713";color:var(--ok);font-weight:700;flex:none;line-height:1.5}
+.buy-actions{display:flex;gap:12px;flex-wrap:wrap}
+.buy-region{
+  font-size:13.8px;color:var(--faint);border-top:1px solid var(--line-soft);
+  padding-top:16px;margin:24px 0 0;max-width:64ch;line-height:1.62;
+}
+.buy-region b{color:var(--muted);font-weight:620}
+.buy-right{text-align:right;white-space:nowrap}
+.buy-right .amount{font-size:42px;font-weight:700;letter-spacing:-.03em;line-height:1.1}
+.buy-right .amount small{display:block;font-size:15px;font-weight:500;color:var(--muted);letter-spacing:0;margin-top:4px}
+.buy-right .rule{width:52px;height:2px;background:var(--line);margin:16px 0 16px auto}
+.buy-right .terms{color:var(--faint);font-size:13.8px;line-height:1.7}
+.buy-right .terms b{display:block;color:var(--muted);font-weight:600}
+
+/* ==========================================================================
+   Sticky mobile action bar
+   ========================================================================== */
+.buybar{
+  position:fixed;left:0;right:0;bottom:0;z-index:90;display:none;
+  background:rgba(19,19,21,.95);backdrop-filter:saturate(160%) blur(12px);
+  -webkit-backdrop-filter:saturate(160%) blur(12px);
+  border-top:1px solid var(--line);
+  padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));
+  align-items:center;gap:14px;
+}
+.buybar .bb-p{font-size:14px;line-height:1.3;min-width:0}
+.buybar .bb-p b{display:block;font-size:16px;font-weight:680;letter-spacing:-.01em}
+.buybar .bb-p span{color:var(--faint);font-size:12.5px}
+.buybar .btn{flex:none;margin-left:auto;padding:11px 18px;font-size:15px}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer{padding:46px 0 58px;color:var(--faint);font-size:14px}
+.foot{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-start}
+.foot-brand{color:var(--muted);font-weight:560}
+.foot-links{display:flex;gap:8px 20px;flex-wrap:wrap}
+.foot-links a{color:var(--faint);padding:5px 0;display:inline-block}
+.foot-links a:hover{color:var(--muted)}
+.legal{margin:22px 0 0;max-width:88ch;line-height:1.66;font-size:13.4px}
+.legal b{color:var(--muted);font-weight:600}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width:1020px){
+  .trust-in{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:940px){
+  .hero-in{grid-template-columns:1fr;gap:40px}
+  .cols{grid-template-columns:1fr;gap:30px}
+  .split{grid-template-columns:1fr}
+  .trialsplit{grid-template-columns:1fr;gap:28px}
+  .buy{grid-template-columns:1fr;gap:28px;padding:32px}
+  .buy-right{text-align:left;white-space:normal}
+  .buy-right .rule{margin:14px 0}
+}
+@media (max-width:820px){
+  .navtoggle{display:inline-block}
+  nav{
+    display:none;position:absolute;left:0;right:0;top:66px;
+    flex-direction:column;align-items:stretch;gap:2px;
+    background:var(--bg);border-bottom:1px solid var(--line);padding:10px 24px 16px;
+  }
+  nav[data-open="true"]{display:flex}
+  nav a{padding:11px 10px;font-size:15.5px}
+  .nav-cta{text-align:center;margin-top:6px}
+  header .bar{flex-wrap:wrap;height:auto;padding-top:12px;padding-bottom:12px}
+  html{scroll-padding-top:70px}
+}
+@media (max-width:640px){
+  .wrap{padding:0 18px}
+  .hero{padding:48px 0 44px}
+  section{padding:54px 0}
+  section.tight{padding:44px 0}
+  .trust-in{grid-template-columns:1fr 1fr}
+  .facts{grid-template-columns:1fr 1fr}
+  .buybar{display:flex}
+  body{padding-bottom:68px}
+  .buy{padding:26px 22px}
+}
+@media (max-width:420px){
+  .trust-in{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+@media (prefers-contrast:more){
+  :root{--muted:#c3c3cc;--faint:#a8a8b3;--line:#4a4a55;--line-soft:#3a3a44}
+}
+@media print{
+  header,.regionbar,.cta,.buy,.buybar,.skip,nav{display:none!important}
+  body{background:#fff;color:#000;padding-bottom:0;font-size:11pt}
+  section{border-bottom:1px solid #ccc;padding:18pt 0}
+  .card,.panel,.cap,.tblwrap,.viz,.callout,.indev,.trialside{border-color:#ccc;background:#fff}
+  .tbl td,.card p,.panel ul,.cap li{color:#222}
+  a{color:#000;text-decoration:underline}
+  details .a{display:block!important}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============================ REGION BAR ============================
+     Hidden by default and revealed only by script, and only when the
+     visitor's region cannot be determined from their own browser settings.
+     The page content is identical either way - this is a pricing notice,
+     not cloaking. Crawlers and visitors without JavaScript see the India
+     price, which is the price we actually charge. -->
+<div class="regionbar" id="regionbar" hidden>
+  <div class="wrap regionbar-in">
+    <p>
+      <b>LaPanda IDM is priced and supported for India.</b>
+      This page is published worldwide, so tell us where you are and we will show you the right price.
+    </p>
+    <div class="regionbar-actions">
+      <button type="button" data-region="IN">I am in India</button>
+      <button type="button" data-region="OTHER">I am elsewhere</button>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top">
+      <img src="assets/logo.png" alt="" width="28" height="28">
+      <span>LaPanda IDM<small>by Zerith Studio</small></span>
+    </a>
+
+    <button class="navtoggle" id="navtoggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+    <nav id="site-nav">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#engineering">Engineering</a>
+      <a href="#interface">Interface</a>
+      <a href="#compare">Compare</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="downloads/LaPandaIDM-1.0.0-setup.exe" download>Download trial</a>
+    </nav>
+
+    <button class="regionchip" id="regionchip" type="button" data-region="IN" hidden><span data-region-label>India &middot; INR</span><span class="sr">, change region and currency</span></button>
+  </div>
+</header>
+
+<main id="main">
+<a id="top"></a>
+
+<!-- ============================ HERO ============================ -->
+<div class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <span class="eyebrow"><span class="dot"></span>Windows 10 &amp; 11 &middot; x64 &middot; version 1.0</span>
+      <h1>The download manager you pay for once.</h1>
+      <p class="lede">
+        LaPanda IDM splits large downloads across parallel byte-range connections, re-divides the
+        remaining work while the transfer runs, resumes from the last completed range after an
+        interruption, and verifies every range before it accepts it. No account. No telemetry.
+        No renewal in twelve months&rsquo; time.
+      </p>
+
+      <div class="cta">
+        <a class="btn btn-primary" href="downloads/LaPandaIDM-1.0.0-setup.exe" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg>
+          Download the 30-day trial
+        </a>
+        <a class="btn btn-ghost" href="#pricing">See pricing</a>
+      </div>
+      <p class="cta-note">
+        2.1&nbsp;MB installer &middot; no account, no card &middot; Windows 10 or 11, 64-bit
+      </p>
+
+      <div class="price-block">
+        <span class="price" data-inr="&#8377;575.18" data-usd="US$6">&#8377;575.18</span>
+        <span class="price-note">one-time &middot; one computer &middot; never renewed</span>
+      </div>
+
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>Perpetual, per computer</dd></div>
+        <div><dt>Account</dt><dd>Not required</dd></div>
+        <div><dt>Telemetry</dt><dd>None</dd></div>
+        <div><dt>Activation</dt><dd>Offline, signed key</dd></div>
+        <div><dt>Trial</dt><dd>30 days, all features</dd></div>
+        <div><dt>Region</dt><dd>Priced for India</dd></div>
+      </dl>
+    </div>
+
+    <div class="viz" role="img" aria-label="Schematic of one large file divided into eight byte ranges across eight connections. Three ranges are complete and five are part transferred, which is 75% of the file. This is an illustration of how the mechanism works, not a recorded transfer.">
+      <div class="viz-t">ubuntu-24.04-desktop.iso &middot; schematic</div>
+      <div class="segbar">
+        <div class="seg done"></div>
+        <div class="seg done"></div>
+        <div class="seg done"></div>
+        <div class="seg a"></div>
+        <div class="seg b"></div>
+        <div class="seg c"></div>
+        <div class="seg d"></div>
+        <div class="seg e"></div>
+      </div>
+      <div class="viz-meta">
+        <span><b>8</b> connections</span>
+        <span><b>75%</b> complete</span>
+        <span><b>5</b> ranges in flight</span>
+      </div>
+      <div class="viz-legend">
+        <span><i class="sw"></i>range complete</span>
+        <span><i class="sw partial"></i>in progress</span>
+        <span>Illustration of the mechanism, not a measured transfer</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================ TRUST STRIP ============================ -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-in">
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-3.5 8-10V5.5L12 2 4 5.5V12c0 6.5 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        <b>Offline activation</b>
+        <span>Keys are ECDSA-signed and checked locally. There is no licence server to be down.</span>
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg>
+        <b>No telemetry</b>
+        <span>No analytics, no crash reporting, no licence check over the network.</span>
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7C10 7 7.5 5.4 7.5 3 10.5 3 12 7 12 7z"/><path d="M12 7c2 0 4.5-1.6 4.5-4C13.5 3 12 7 12 7z"/></svg>
+        <b>One-time payment</b>
+        <span>No subscription, no renewal notice, no feature that disappears after a year.</span>
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+        <b>No account</b>
+        <span>No registration, no sign-in, no email address handed over to use the app.</span>
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <b>30-day full trial</b>
+        <span>Every feature enabled. A time limit, not a cut-down build.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================ POSITIONING ============================ -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Why this exists</span>
+      <h2>Download managers are not supposed to work like a lease.</h2>
+      <p>
+        The established tools do the job competently. They are also sold on licences you re-buy,
+        tied to an account, and padded with browser plugins you may never want. LaPanda IDM does the
+        transfer engine properly, charges for it once, and stops there.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20"/><path d="M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Pay once and keep it</h3>
+        <p>
+          <span data-inr="&#8377;575.18" data-usd="US$6">&#8377;575.18</span> buys a licence for one
+          computer. It does not expire, there is no renewal prompt, and nothing is withdrawn when the
+          year turns over.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v13H4z"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M9 13h6"/></svg></div>
+        <h3>Nothing to register for</h3>
+        <p>
+          There is no account and no sign-in. Your licence is a signed key you paste in once, bound
+          to your machine and verified locally on every launch.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-3.5 8-10V5.5L12 2 4 5.5V12c0 6.5 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>It does not phone home</h3>
+        <p>
+          No analytics, no crash reports, no remote licence check. LaPanda IDM talks to the servers
+          you ask it to download from, and to nothing else.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div>
+        <h3>An interface you can read</h3>
+        <p>
+          One window, one list, one toolbar. Everything the application can do is visible on the
+          first screen rather than buried in nested dialogs.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CAPABILITIES ============================ -->
+<section id="capabilities">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Capabilities</span>
+      <h2>Everything version 1.0 actually ships</h2>
+      <p>
+        Each item below is in the build you can download today. Capabilities that are written but
+        not yet reachable from the interface are listed separately underneath, because calling them
+        available would not be true.
+      </p>
+    </div>
+
+    <div class="capgrid">
+      <div class="cap">
+        <div class="cap-head">
+          <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4M10 12h4M17 12h4"/><path d="M12 3v18"/></svg></div>
+          <h3>Transfer engine</h3>
+        </div>
+        <p class="cap-desc">How bytes move, and how many connections it takes to move them.</p>
+        <ul>
+          <li><b>Parallel byte-range downloads</b>Large files are split into ranges fetched on separate connections, each writing directly at its own offset in the target file.</li>
+          <li><b>Range plan re-divided while running</b>A connection that finishes early takes on more work. When there is nothing left to claim, the largest remaining tail is halved and handed to an idle connection. This applies only above 1&nbsp;MB of remaining tail.</li>
+          <li><b>Streaming, not buffering</b>Responses are read through an 80&nbsp;KiB buffer and written as they arrive, so a 20&nbsp;GB file is never held in memory.</li>
+          <li><b>Single write per file</b>The target file is created at full length up front and each connection seeks to its own offset, so no temporary parts or second copy exist.</li>
+          <li><b>Concurrency and bandwidth controls</b>Up to 3 downloads at once by default, 8 connections per file, and a global speed ceiling in KB/s.</li>
+        </ul>
+      </div>
+
+      <div class="cap">
+        <div class="cap-head">
+          <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.4 3.1 8.4 8 9 4.9-.6 8-4.6 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Reliability and integrity</h3>
+        </div>
+        <p class="cap-desc">What happens when the network, the server or the power fails.</p>
+        <ul>
+          <li><b>Resume from the last completed range</b>Per-range progress is flushed to a state file beside the download every two seconds. Reopen after a crash or reboot and it continues.</li>
+          <li><b>Resume validates before it trusts</b><code>ETag</code> or <code>Last-Modified</code> is sent as <code>If-Range</code>, and only a <code>206</code> whose <code>Content-Range</code> starts exactly where it asked is accepted.</li>
+          <li><b>Changed files are restarted, not spliced</b>If the file on the server no longer matches, the partial data is discarded and the download starts again rather than producing a file that looks finished and is not.</li>
+          <li><b>Retry per range, not per file</b>Five attempts per range with a widening backoff of 2s, 5s, 10s, 20s and 30s. Losing one connection out of eight costs that range and nothing else.</li>
+          <li><b>Stall detection</b>A connection that receives no bytes for 30 seconds is treated as dead and its range is retried, because the request timeout does not cover the response body.</li>
+        </ul>
+      </div>
+
+      <div class="cap">
+        <div class="cap-head">
+          <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Control and queue</h3>
+        </div>
+        <p class="cap-desc">Running the queue around your day rather than around the server.</p>
+        <ul>
+          <li><b>Scheduled daily window</b>Set a start and stop time. The application resumes paused and pending downloads when it opens and pauses active ones when it closes.</li>
+          <li><b>Bandwidth ceiling</b>One number in KB/s, enforced across every connection of every download. Zero means unlimited.</li>
+          <li><b>Authenticated HTTP proxy</b>Proxy address, username and password applied consistently to the initial metadata request and every range transfer.</li>
+          <li><b>Queue actions where you expect them</b>Pause, resume, cancel and remove from the toolbar, the right-click menu or the keyboard. Clear completed items in one action.</li>
+          <li><b>Per-download detail window</b>Size, bytes transferred, live rate, estimated time remaining, and a bar showing the start position and progress of every individual connection.</li>
+        </ul>
+      </div>
+
+      <div class="cap">
+        <div class="cap-head">
+          <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg></div>
+          <h3>Output and safety</h3>
+        </div>
+        <p class="cap-desc">What the application does once the last byte lands.</p>
+        <ul>
+          <li><b>Windows Defender scan on completion</b>The finished file is passed to the Defender scanner already installed on the machine. Best-effort, non-blocking, and never stalls the queue.</li>
+          <li><b>Automatic file categorisation</b>Completed files are sorted into folders by detected type, and each queue entry is tagged with its category.</li>
+          <li><b>Filename from the server</b><code>Content-Disposition</code> is honoured where the server sends it, so a download is not saved as a random path segment.</li>
+          <li><b>Server-side encoding left alone</b><code>Content-Encoding</code> is deliberately not decoded, so the bytes written to disk are the bytes the origin sent.</li>
+          <li><b>Uninstall asks first</b>Your queue, settings and licence key live outside the install folder. The uninstaller asks before removing them, so reinstalling never silently discards your licence.</li>
+        </ul>
+      </div>
+
+      <div class="cap">
+        <div class="cap-head">
+          <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/><path d="M9 9h6"/></svg></div>
+          <h3>Licensing</h3>
+        </div>
+        <p class="cap-desc">How entitlement is proved, and what it is bound to.</p>
+        <ul>
+          <li><b>Signed keys, not server lookups</b>Keys are ECDSA (P-256) signed. Only the public half is compiled into the application, so it can verify a key and can never mint one.</li>
+          <li><b>Signature checked before the payload is read</b>The payload is attacker-controlled until the signature passes, so verification happens first.</li>
+          <li><b>Bound to hardware, deliberately</b>The machine ID is a hash of BIOS strings and the system volume serial number. The MAC address is excluded on purpose, because laptops switch between Wi-Fi and Ethernet.</li>
+          <li><b>Survives a Windows reinstall</b>Because the binding is to hardware rather than to an operating system install or an account.</li>
+          <li><b>Free reissue on new hardware</b>Replace your motherboard or system drive and the vendor reissues the key at no charge.</li>
+        </ul>
+      </div>
+
+      <div class="cap">
+        <div class="cap-head">
+          <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V8l6-4 6 4v12"/><path d="M9 20v-6h6v6"/></svg></div>
+          <h3>Local data</h3>
+        </div>
+        <p class="cap-desc">Where your queue and preferences live, and where they do not.</p>
+        <ul>
+          <li><b>Queue and preferences in one folder</b><code>%APPDATA%\IDM</code>, as a small local database plus <code>settings.xml</code>.</li>
+          <li><b>Resume state beside the download</b>A small <code>.lapandaidm.json</code> file next to the partial file, removed once the download completes.</li>
+          <li><b>Nothing retained on any server</b>There is no server component, so there is nowhere for your data to be retained.</li>
+          <li><b>Runs without administrator rights</b>Installing asks for elevation once, because it writes to Program Files and the registry. Once installed the application runs as a standard user and never asks again.</li>
+          <li><b>Nothing to choose during setup</b>One screen, one Install button. It goes to Program Files and adds a single Start menu entry. There is no location picker, no component list, and no options page.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ============ in development: honest disclosure ============ -->
+    <div class="indev">
+      <h3>In development &mdash; written, but not yet in the interface</h3>
+      <p>
+        The components below are implemented as engine code in this codebase, but version 1.0 does
+        not surface them in the user interface, so you cannot start one from the application today.
+        They are listed here rather than in the capability grid because the distinction matters when
+        you are deciding whether to buy.
+      </p>
+
+      <div class="indev-grid">
+        <div class="indev-item">
+          <h4>BitTorrent and magnet links <span>Not reachable in 1.0</span></h4>
+          <p>
+            A full BEP 3 metainfo parser, bencode reader and writer, HTTP and UDP (BEP 15) tracker
+            client, peer wire protocol (BEP 10), piece hashing and magnet metadata retrieval via
+            <code>ut_metadata</code> (BEP 9) are present as engine components. The application
+            currently downloads HTTP and HTTPS URLs only.
+          </p>
+        </div>
+        <div class="indev-item">
+          <h4>Metalink multi-mirror <span>Not reachable in 1.0</span></h4>
+          <p>
+            A <code>.metalink</code> v3 parser and a resolver that works a mirror list and verifies
+            the finished file against the hashes in the document exist as a component. It is not yet
+            called from the download queue.
+          </p>
+        </div>
+        <div class="indev-item">
+          <h4>Browser integration <span>Not built</span></h4>
+          <p>
+            There is no browser extension and no clipboard monitoring. Links are added through the
+            Add URL dialog or by dragging them onto the window. This is the largest single gap
+            against the established tools, and we would rather name it than bury it.
+          </p>
+        </div>
+        <div class="indev-item">
+          <h4>Video capture from web pages <span>Not built</span></h4>
+          <p>
+            Capturing a video stream from a web page is not implemented. LaPanda IDM downloads URLs
+            you give it; it does not extract media from pages.
+          </p>
+        </div>
+        <div class="indev-item">
+          <h4>Completion notifications <span>Partial</span></h4>
+          <p>
+            The settings switch exists and is persisted, but the notification is not yet surfaced
+            to Windows. Finished downloads still update the list and the status bar, so nothing is
+            silently lost &mdash; you simply do not get a pop-up.
+          </p>
+        </div>
+        <div class="indev-item">
+          <h4>Site spider <span>Component only</span></h4>
+          <p>
+            A bounded link crawler exists as a utility class with depth and filter controls. It has
+            no user interface and no scheduled job, so it does nothing in the shipping application.
+          </p>
+        </div>
+      </div>
+
+      <p class="indev-foot">
+        Peer discovery for the torrent engine is tracker-based. There is no DHT bootstrap, no peer
+        exchange extension and no local service discovery in this build, so magnet links depend on
+        the swarm being reachable through the torrent&rsquo;s own trackers. If and when this reaches
+        the interface, that will be documented rather than assumed.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ENGINEERING ============================ -->
+<section id="engineering">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Engineering</span>
+      <h2>The actual numbers, not a speed multiplier</h2>
+      <p>
+        Marketing pages usually quote a speed-up factor. Here are the real limits in the shipping
+        build: the mechanism, and its ceiling.
+      </p>
+    </div>
+
+    <ol class="steps">
+      <li>
+        <h3>Negotiate</h3>
+        <p>A <code>HEAD</code> request reads the file size and checks for range support; if the server will not answer <code>HEAD</code> usefully, a one-byte range request is used to read the total from <code>Content-Range</code> instead. That answer decides whether the file can be split at all.</p>
+      </li>
+      <li>
+        <h3>Plan</h3>
+        <p>The file is divided into ranges sized to your settings and core count. The plan is written to disk immediately and rewritten as it changes, so an unplanned shutdown costs nothing.</p>
+      </li>
+      <li>
+        <h3>Transfer</h3>
+        <p>Each range runs on its own connection into its own offset, bounded by the concurrency and speed settings, with progress flushed every two seconds. Finished connections claim more work; an exhausted plan hands its largest remaining tail to an idle connection.</p>
+      </li>
+      <li>
+        <h3>Verify and file</h3>
+        <p>Every range is checked against the length the server declared, so a short or mismatched response is retried rather than accepted. On the last byte, the file goes to Windows Defender and then into its category folder.</p>
+      </li>
+    </ol>
+
+    <div class="tblwrap" style="margin-top:36px">
+      <div class="scrollx">
+        <table class="tbl">
+          <caption class="sr">Shipping technical limits of LaPanda IDM 1.0</caption>
+          <tbody>
+            <tr><th scope="row">Connections per file</th><td>8 by default, hard-capped at twice your logical processor count. The lower of the two always wins, so on a four-core machine the ceiling is 8 and a higher setting changes nothing.</td></tr>
+            <tr><th scope="row">Smallest file that is split</th><td>256&nbsp;KB. Below that a single connection is used, because splitting would not help.</td></tr>
+            <tr><th scope="row">Server requirement</th><td>The origin must advertise <code>Accept-Ranges: bytes</code>. Where it does not, LaPanda IDM downloads on one connection and tells you, rather than pretending to accelerate.</td></tr>
+            <tr><th scope="row">Concurrent downloads</th><td>3 by default, adjustable from 1 upward in Settings.</td></tr>
+            <tr><th scope="row">Retries</th><td>Per byte range, not per file. Five attempts with a widening backoff of 2s, 5s, 10s, 20s and 30s, while the other connections keep their progress. A range that exhausts its attempts fails the download; nothing else is lost.</td></tr>
+            <tr><th scope="row">Stalled connections</th><td>A connection receiving no bytes for 30 seconds is treated as dead and its range is retried. The 30-minute request timeout does not cover the response body, so this is enforced separately.</td></tr>
+            <tr><th scope="row">Resume precision</th><td>Resumption sends the <code>ETag</code> or <code>Last-Modified</code> of the original file as <code>If-Range</code>, and accepts only a <code>206</code> whose <code>Content-Range</code> begins exactly where it asked. A changed file is discarded and restarted rather than spliced. One automatic restart is permitted per download before it is reported as failed.</td></tr>
+            <tr><th scope="row">Dynamic re-split</th><td>The plan is not fixed at the start. Finished connections claim more work; when the plan runs dry the largest remaining tail is halved and passed to an idle connection. This only applies above <strong>1&nbsp;MB</strong> of remaining tail, and never to a range of unknown length, since there is no safe place to cut one. One slow range therefore cannot decide when the file lands, but below that threshold it can.</td></tr>
+            <tr><th scope="row">Transfer handling</th><td>Responses are streamed rather than buffered whole, through an 80&nbsp;KiB read buffer, with a 30-minute request timeout. <code>Content-Encoding</code> is deliberately not decoded, so the bytes saved are the bytes the server sent.</td></tr>
+            <tr><th scope="row">State persistence</th><td>Progress is flushed to a <code>.lapandaidm.json</code> file beside the partial download every two seconds, and the queue database is saved on every state change.</td></tr>
+            <tr><th scope="row">Disk usage</th><td>The target file is created at full size up front and each connection writes into its own offset, so the file is written once. No temporary copies, no separate parts.</td></tr>
+            <tr><th scope="row">Proxy</th><td>HTTP, with username and password, applied to the metadata request and to every range transfer.</td></tr>
+            <tr><th scope="row">On completion</th><td>Windows Defender scan, move into the category folder, removal of the resume state file.</td></tr>
+            <tr><th scope="row">Licence verification</th><td>ECDSA P-256 signature check against a compiled-in public key, on every launch. Local only; the application contains no network path for licensing.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="tblfoot">
+      The consequence worth knowing: multi-connection speed-up depends on the origin server and on
+      any per-connection shaping your ISP applies. Neither is something the application can control,
+      which is why it reports the range capability it detected for each download instead of quoting
+      a multiplier.
+    </p>
+  </div>
+</section>
+
+<!-- ============================ INTERFACE ============================ -->
+<section id="interface">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Interface</span>
+      <h2>One window, nothing to hunt for</h2>
+      <p class="lede-sm">The whole application is this list, this toolbar and one settings dialog.</p>
+    </div>
+
+    <div class="cols">
+      <figure style="margin:0">
+        <div class="shot">
+          <div class="shot-bar"><i></i><i></i><i></i><span>LaPanda IDM &mdash; main window</span></div>
+          <img src="assets/01-dashboard.png" width="991" height="598" loading="lazy" decoding="async"
+               alt="LaPanda IDM main window: a toolbar of download controls above a list with columns for file name, size, progress, status, speed, time left, date added and category, and a status bar along the bottom.">
+        </div>
+        <figcaption>
+          Add a URL, then manage everything from the toolbar or the right-click menu. The status bar
+          carries the active count and the aggregate speed across the whole queue.
+        </figcaption>
+      </figure>
+
+      <ul class="specs">
+        <li><span>Queue columns</span><b>Name, size, progress, status</b></li>
+        <li><span>Live per file</span><b>Speed, time remaining</b></li>
+        <li><span>Added</span><b>Date, category</b></li>
+        <li><span>Status bar</span><b>Active count, total speed</b></li>
+        <li><span>Right-click</span><b>Open, reveal, copy URL</b></li>
+        <li><span>Per download</span><b>Pause, resume, cancel, remove</b></li>
+        <li><span>Adding links</span><b>Add URL dialog, or drag and drop</b></li>
+        <li><span>Window</span><b>Resizable, minimum 800&times;400</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ COMPARE ============================ -->
+<section id="compare">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Comparison</span>
+      <h2>Against the incumbent, including the rows we lose</h2>
+      <p>Some rows LaPanda IDM wins. Some it does not. Both are printed.</p>
+    </div>
+
+    <div class="tblwrap">
+      <div class="scrollx">
+        <table class="cmp tbl">
+          <caption class="sr">LaPanda IDM compared with Internet Download Manager</caption>
+          <thead>
+            <tr>
+              <th scope="col"><span class="sr">Criterion</span></th>
+              <th scope="col" class="us">LaPanda IDM 1.0</th>
+              <th scope="col">Internet Download Manager</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Licence term</th><td class="us"><span class="yes">One-time</span>, perpetual</td><td>Annual licence, renewed each year</td></tr>
+            <tr><th scope="row">Price</th><td class="us"><span data-inr="&#8377;575.18" data-usd="US$6">&#8377;575.18</span> once</td><td>Annual fee, varies by region and term</td></tr>
+            <tr><th scope="row">Account required</th><td class="us"><span class="yes">No</span></td><td>Yes, an email address is asked for</td></tr>
+            <tr><th scope="row">Telemetry</th><td class="us"><span class="yes">None</span>. There is no event reporting in the code</td><td>Not independently audited by us</td></tr>
+            <tr><th scope="row">Segmented large-file downloads</th><td class="us"><span class="yes">Yes</span>, capped to core count</td><td>Yes</td></tr>
+            <tr><th scope="row">Adaptive range re-split</th><td class="us"><span class="yes">Yes</span></td><td>Yes</td></tr>
+            <tr><th scope="row">Resume after interruption</th><td class="us"><span class="yes">Yes</span>, per range, on disk</td><td>Yes</td></tr>
+            <tr><th scope="row">Resume integrity validation</th><td class="us"><span class="yes">If-Range</span> plus <span class="yes">Content-Range</span> check</td><td>Yes</td></tr>
+            <tr><th scope="row">Bandwidth cap</th><td class="us"><span class="yes">Yes</span></td><td>Yes</td></tr>
+            <tr><th scope="row">Proxy with authentication</th><td class="us"><span class="yes">Yes</span></td><td>Yes</td></tr>
+            <tr><th scope="row">Scheduled start and stop</th><td class="us"><span class="yes">Yes</span>, daily window</td><td>Yes, more granular</td></tr>
+            <tr><th scope="row">Malware scan on completion</th><td class="us"><span class="yes">Yes</span>, Windows Defender</td><td>Yes</td></tr>
+            <tr><th scope="row">Browser integration</th><td class="us"><span class="no">Not built</span></td><td>Mature &mdash; their main strength</td></tr>
+            <tr><th scope="row">Video capture from pages</th><td class="us"><span class="no">Not built</span></td><td>Yes</td></tr>
+            <tr><th scope="row">Torrents and magnet links</th><td class="us"><span class="no">Engine written, not in the interface</span></td><td>Yes</td></tr>
+            <tr><th scope="row">Metalink multi-mirror</th><td class="us"><span class="no">Engine written, not in the interface</span></td><td>Yes</td></tr>
+            <tr><th scope="row">Platforms</th><td class="us">Windows only, x64 only</td><td>Windows and macOS</td></tr>
+            <tr><th scope="row">Time in the market</th><td class="us">New &mdash; version 1.0</td><td>Long-established</td></tr>
+            <tr><th scope="row">Track record</th><td class="us"><span class="no">None yet. Judge it on the 30-day trial</span></td><td>Long and well documented</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="tblfoot">
+      Read the LaPanda IDM column against the source, because you can. The other column comes from that
+      vendor&rsquo;s own published material, read at the time of writing; we have not audited their binary or their
+      network behaviour, and closed-source software cannot be verified the way ours can. Prices,
+      feature sets and licensing terms for that product change regularly, so check their site before
+      deciding. Zerith Studio is not affiliated with, endorsed by, or sponsored by that product or its
+      vendor. This is a statement of observed differences, not a claim of equivalence or superiority.
+    </p>
+
+    <div class="split">
+      <div class="panel us">
+        <h3>LaPanda IDM suits you if <span class="pill">Our side</span></h3>
+        <ul>
+          <li>You are <b>tired of renewing a licence</b> annually for the same set of features.</li>
+          <li>You would rather <b>not hand over an email address</b> to use a download tool.</li>
+          <li>You are <b>comfortable adding links yourself</b> and do not need browser capture.</li>
+          <li>You want a tool that <b>still runs offline</b> in five years with no licence server to depend on.</li>
+          <li>You want to <b>read the technical limits</b> before you pay, not after.</li>
+        </ul>
+      </div>
+      <div class="panel them">
+        <h3>Stay with the incumbent if <span class="pill">Their side</span></h3>
+        <ul>
+          <li>You rely on <b>browser integration or video capture</b>. Neither exists here yet, and that is their strongest feature.</li>
+          <li>You need the <b>macOS build</b> &mdash; LaPanda IDM is Windows and x64 only.</li>
+          <li>You need <b>torrents today</b>, not after they are wired into the interface.</li>
+          <li>You want a feature set <b>refined over twenty years</b> rather than one written recently.</li>
+          <li>Any doubt at all about maturity is a good reason to wait. Nothing is lost by waiting.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PRICING ============================ -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Pricing and licensing</span>
+      <h2>One price, stated once</h2>
+      <p>
+        <b data-inr="&#8377;575.18" data-usd="US$6">&#8377;575.18</b>
+        <span class="muted" data-inr="(&#8377;575.18, approximately US$6)" data-usd="(US$6, reference price for &#8377;575.18)">(&#8377;575.18, approximately US$6)</span>
+        once, for one computer. No subscription, no renewal, no charge for updates.
+      </p>
+    </div>
+
+    <div class="regionnote" id="outside" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16.5v.01"/></svg>
+      <div>
+        <b>You are outside India.</b>
+        The figure shown is the India list price, converted for reference only; nothing on this page
+        is charged in your currency. The trial runs anywhere, but licences are sold and supported for
+        Indian customers. Email us before buying and we will quote for your region, or tell you
+        plainly if we cannot supply you.
+      </div>
+    </div>
+
+    <div class="tblwrap">
+      <div class="scrollx">
+        <table class="tbl">
+          <caption class="sr">Licence terms</caption>
+          <thead>
+            <tr><th scope="col">Term</th><th scope="col">Detail</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Price</th><td><b data-inr="&#8377;575.18" data-usd="US$6">&#8377;575.18</b> once (<span data-inr="approximately US$6" data-usd="the India list price, &#8377;575.18">approximately US$6</span>). Not a subscription.</td></tr>
+            <tr><th scope="row">Region</th><td>Priced for and sold to customers in <b>India</b>. This page is published worldwide, so you may reach it from elsewhere &mdash; contact us first and we will quote for your region or decline honestly.</td></tr>
+            <tr><th scope="row">Renewal</th><td>None. The licence does not expire and is never recharged.</td></tr>
+            <tr><th scope="row">Coverage</th><td>One licence per computer.</td></tr>
+            <tr><th scope="row">Updates</th><td>Provided by email at no charge, for the life of the product.</td></tr>
+            <tr><th scope="row">Trial</th><td>30 days from first run, every feature enabled, no functional limits.</td></tr>
+            <tr><th scope="row">Activation</th><td>Entirely offline. You send a machine ID, we email a signed key, you paste it into the activation window.</td></tr>
+            <tr><th scope="row">Reinstalling Windows</th><td>Your key survives, because it is bound to hardware rather than to an operating system install.</td></tr>
+            <tr><th scope="row">New hardware</th><td>Send the new machine ID and the key is reissued at no charge.</td></tr>
+            <tr><th scope="row">Payment</th><td>By email invoice or transfer. We do not run a card checkout, so no card number is stored by us.</td></tr>
+            <tr><th scope="row">Refunds</th><td>Considered case by case within 30 days of purchase. Contact us with the reason, your order email address and your machine ID.</td></tr>
+            <tr><th scope="row">Source code</th><td>Not available. LaPanda IDM is proprietary, closed-source software.</td></tr>
+            <tr><th scope="row">Redistribution</th><td>Not permitted. Your licence covers your own use on your own computer.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="tblfoot">
+      Full terms are in the <a href="license.html">end user licence agreement</a>. Where this summary
+      and the EULA differ, the EULA governs.
+    </p>
+
+    <h3 style="margin:40px 0 18px;font-size:19px">How a purchase works</h3>
+    <ol class="steps vertical">
+      <li>
+        <h3>Install and launch the trial</h3>
+        <p>The installer is the same one you can download free. Installing it does not commit you to anything; the trial starts on first run.</p>
+      </li>
+      <li>
+        <h3>Send us the machine ID</h3>
+        <p>The activation window shows a 32-character machine ID for this computer, with a <b>Copy request</b> button. That string is what a licence is bound to, and we cannot issue a key without it.</p>
+      </li>
+      <li>
+        <h3>We send a signed key by email</h3>
+        <p>Usually the same working day. Pay by the method we confirm, and we issue the key against the machine ID you supplied.</p>
+      </li>
+      <li>
+        <h3>Paste the key and you are licensed</h3>
+        <p>Paste it into the activation window. Verification is local and immediate. The key remains valid on this computer through a Windows reinstall, and in the About box it reports as perpetual with your name on it.</p>
+      </li>
+    </ol>
+
+    <div class="checksum">
+      <h4>Verify the installer &mdash; SHA-256</h4>
+      <p class="muted" style="font-size:13.8px;margin:0 0 12px">
+        Version 1.0 is not code-signed, so Windows SmartScreen will warn you about an unrecognised
+        publisher. This checksum lets you confirm you are running the exact file published here.
+        Version 1.0.0 &middot; 2,250,138 bytes &middot; x64.
+      </p>
+      <div class="hashrow">
+        <code id="sha">b676c1a9b3ccfd69f94d014d37eea95c376304e3039b968a4b2c546892a8370a</code>
+        <button class="copybtn" type="button" id="copysha" data-copied="false">Copy</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TRIAL ============================ -->
+<section id="trial" class="tight">
+  <div class="wrap">
+    <div class="trialsplit">
+      <div>
+        <span class="kicker">Free trial</span>
+        <h2>Thirty days of the whole application</h2>
+        <p class="lede-sm" style="max-width:54ch;margin-bottom:20px">
+          The trial is not a reduced build. Every capability described above is available, with no
+          connection cap to unlock and no clock that a reinstall resets.
+        </p>
+        <ul class="trial-points">
+          <li>No account, no card and no email address to start</li>
+          <li>Every feature enabled, including segmentation, scheduling, proxy and the Defender scan</li>
+          <li>The 30 days start when you first run the application, not when you download it</li>
+          <li>Reinstalling does not reset the clock, and winding the system clock back is detected</li>
+          <li>The installer is byte-for-byte the one a licensed customer receives</li>
+        </ul>
+        <div class="cta" style="margin-bottom:0">
+          <a class="btn btn-primary" href="downloads/LaPandaIDM-1.0.0-setup.exe" download>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg>
+            Download LaPanda IDM 1.0
+          </a>
+        </div>
+      </div>
+
+      <div class="trialside">
+        <h3>When the 30 days run out</h3>
+        <p>LaPanda IDM stops opening the main window and shows the activation window instead. That is the entire consequence.</p>
+        <ul>
+          <li>Your queue, settings and categories are <b>kept</b>, not deleted.</li>
+          <li>Nothing is removed from your computer.</li>
+          <li>Entering a licence key restores full use immediately.</li>
+          <li>We cannot switch anything on remotely &mdash; activation is a local check with no server involved, which is also why we cannot switch it off.</li>
+        </ul>
+        <p class="foot">
+          If the trial convinces you, a licence is
+          <span data-inr="&#8377;575.18" data-usd="US$6">&#8377;575.18</span> once and never renews.
+          If it does not, uninstalling removes the program and asks whether your settings should go too.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ REQUIREMENTS ============================ -->
+<section id="requirements">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Requirements</span>
+      <h2>Before you install</h2>
+    </div>
+
+    <div class="cols">
+      <div class="tblwrap">
+        <div class="scrollx">
+          <table class="tbl">
+            <caption class="sr">System requirements</caption>
+            <tbody>
+              <tr><th scope="row">Operating system</th><td>Windows 10 or Windows 11, 64-bit</td></tr>
+              <tr><th scope="row">Architecture</th><td>x64 only. No 32-bit build and no ARM64 build.</td></tr>
+              <tr><th scope="row">Runtime</th><td>.NET 8 Desktop Runtime (x64). The installer detects it and offers to fetch it from Microsoft if absent.</td></tr>
+              <tr><th scope="row">Disk space</th><td>Room for your downloads. No second copy is needed while a file is in progress.</td></tr>
+              <tr><th scope="row">Network</th><td>Internet access to the host you are downloading from. Nothing else is contacted.</td></tr>
+              <tr><th scope="row">Privileges</th><td>The installer asks for administrator rights once, because it writes to Program Files and to <code>HKLM</code>. The application itself runs as a standard user and never asks again.</td></tr>
+              <tr><th scope="row">Install location</th><td>Program Files, per machine. There is no location picker; the installer goes to the default path. One Start menu entry is added, and no desktop shortcut.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <div class="callout warn">
+          <h3>Expect a SmartScreen warning</h3>
+          <ul>
+            <li>Version 1.0 is <b>not code-signed</b>, so Windows will show an unrecognised publisher warning for both the installer and the application.</li>
+            <li>Choose <b>More info</b>, then <b>Run anyway</b>. This is expected for a first release from a small vendor.</li>
+            <li>To be certain you have the file we published, compare the SHA-256 on the <a href="#pricing">pricing</a> section against your download.</li>
+          </ul>
+        </div>
+        <div class="callout" style="margin-top:16px">
+          <h3>On first launch</h3>
+          <ul>
+            <li>The activation window appears and offers <b>Start 30-day free trial</b>.</li>
+            <li>The machine ID is shown with a <b>Copy request</b> button. Keep it, because it is the first thing we ask for when issuing a key.</li>
+            <li>Windows may ask to allow the app through the firewall. Denying it costs you nothing: it makes no inbound connections.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SECURITY ============================ -->
+<section id="security">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Security and privacy</span>
+      <h2>What leaves your computer, and what does not</h2>
+      <p>
+        Stated precisely, because &ldquo;we do not collect data&rdquo; is a phrase that usually means
+        &ldquo;not unless you read the small print&rdquo;.
+      </p>
+    </div>
+
+    <div class="split" style="margin-top:0">
+      <div class="panel" style="border-top:2px solid var(--ok)">
+        <h3>Never transmitted <span class="pill" style="color:var(--ok);background:rgba(99,214,155,.1)">None of this</span></h3>
+        <ul>
+          <li><b>No analytics or usage telemetry.</b> There is no event reporting in the application.</li>
+          <li><b>No crash reporting service.</b> Failures are written to the local debug output only.</li>
+          <li><b>No licence server.</b> Entitlement is a signature check against a public key compiled into the binary. There is no request to make.</li>
+          <li><b>No account, no sign-in, no email address stored in the app.</b></li>
+          <li><b>No download history uploaded.</b> Your queue stays in a local database on your machine.</li>
+          <li><b>No automatic update check.</b> Updates arrive by email when we send them.</li>
+        </ul>
+      </div>
+
+      <div class="panel" style="border-top:2px solid var(--accent)">
+        <h3>What does go out <span class="pill" style="color:var(--accent);background:var(--accent-dim)">And to whom</span></h3>
+        <ul>
+          <li><b>Your download hosts.</b> The URLs you supply, plus the range and resume headers. This is the transfer itself.</li>
+          <li><b>An HTTP proxy you configure.</b> If you set one in Settings, it necessarily sees the destination URLs.</li>
+          <li><b>dot.net, once.</b> If you accept the installer&rsquo;s offer to fetch the .NET 8 Desktop Runtime, it downloads Microsoft&rsquo;s official <code>dotnet-install.ps1</code> over HTTPS. Declining skips it entirely.</li>
+          <li><b>Windows Defender, locally.</b> When a completed file is scanned. This does not leave the computer.</li>
+          <li><b>BitTorrent trackers, in future.</b> If torrent support ever reaches the interface, announces go to the trackers named in the torrent file. Not active in 1.0.</li>
+          <li><b>Nothing else.</b> This page loads no third-party scripts, fonts, trackers or pixels, which is why it looks the way it does.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tblwrap" style="margin-top:26px">
+      <div class="scrollx">
+        <table class="tbl">
+          <caption class="sr">Data handling on your own computer</caption>
+          <thead>
+            <tr><th scope="col">Data</th><th scope="col">Where it lives</th><th scope="col">On uninstall</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Download queue</th><td>Local database under <code>%APPDATA%\IDM</code></td><td>You are asked before it is deleted</td></tr>
+            <tr><th scope="row">Preferences, proxy settings</th><td><code>%APPDATA%\IDM\settings.xml</code></td><td>You are asked before it is deleted</td></tr>
+            <tr><th scope="row">Licence key</th><td><code>%APPDATA%\IDM\settings.xml</code>, and in your purchase email</td><td>You are asked before it is deleted; your email copy remains</td></tr>
+            <tr><th scope="row">Resume state</th><td><code>.lapandaidm.json</code> beside each partial download</td><td>Removed automatically when the download completes</td></tr>
+            <tr><th scope="row">Trial clock</th><td>Recorded in several places on your computer, at least one outside the folder named above</td><td>The copies in that folder go if you choose; the others stay, so reinstalling does not restart the trial</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="tblfoot">
+      The licence key is stored in plain text on purpose: it cannot be forged, only copied, and a
+      copied key still has to pass both the signature check and the machine binding on every launch.
+      Storing it encrypted would obscure that without adding protection.
+    </p>
+  </div>
+</section>
+
+<!-- ============================ SUPPORT ============================ -->
+<section id="support">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Support</span>
+      <h2>How support actually works here</h2>
+      <p>
+        One vendor, one mailbox, no ticket system and no chatbot. We would rather say that plainly
+        than imply a service desk we do not have.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Channel</h3>
+        <p>Email <a href="mailto:studiozerith@gmail.com">studiozerith@gmail.com</a>. That address reaches the developer of the application.</p>
+      </div>
+      <div class="card">
+        <h3>Response time</h3>
+        <p>Licence keys are usually issued the same working day. Defect reports are acknowledged within two working days. There is no round-the-clock coverage and we do not claim any.</p>
+      </div>
+      <div class="card">
+        <h3>What to send</h3>
+        <p>Your order email address and the 32-character machine ID from the activation window. Without the machine ID a licence cannot be issued or reissued, because we cannot tell which computer it is for.</p>
+      </div>
+      <div class="card">
+        <h3>Bugs</h3>
+        <p>Send the Windows version, what you expected and what happened. The source is closed, so we cannot debug arbitrary patches of the application; reproducible steps on a stock install are the fastest route to a fix.</p>
+      </div>
+      <div class="card">
+        <h3>Updates</h3>
+        <p>Sent by email to customers at no charge, with release notes. There is no in-app updater, so nothing is fetched without you asking.</p>
+      </div>
+      <div class="card">
+        <h3>Hardware changes</h3>
+        <p>A new motherboard or a new system drive means a new machine ID. Send the new ID and the key is reissued at no charge. There is no upgrade fee for this.</p>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:26px">
+      <h3>Refunds</h3>
+      <ul>
+        <li>Refunds are considered <b>case by case</b> within <b>30 days</b> of purchase.</li>
+        <li>Contact us with the reason, your order email address and your machine ID.</li>
+        <li>If you have used the trial, tell us how you used it. We would rather refund a good-faith mismatch than argue about it.</li>
+        <li>Beyond 30 days a licence is not refundable, but a defect that makes the application unusable is addressed under the licence terms in the <a href="license.html">EULA</a>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAQ ============================ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Questions</span>
+      <h2>Straight answers</h2>
+      <p class="lede-sm">Including the ones that cost us sales.</p>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>How much is it, and is it a subscription?</summary>
+        <div class="a">
+          <p>
+            <b data-inr="&#8377;575.18" data-usd="US$6">&#8377;575.18</b> once
+            (<span data-inr="about US$6" data-usd="the &#8377;575.18 India price">about US$6</span>), for
+            one computer. It is not a subscription. The licence does not expire, is never renewed,
+            and updates are free for the life of the product.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Who can buy it? I am not in India.</summary>
+        <div class="a">
+          <p>
+            The price on this page is set for India, and this page is published worldwide, so you
+            may well be reading it from another country. Here is the position in plain terms:
+          </p>
+          <p>
+            <b>The trial runs anywhere.</b> It is the same binary and it does not check your location.
+            <b>Purchasing and support are handled for Indian customers.</b> If you are outside India,
+            email us before paying. We will quote in your currency if we can supply you, and we will
+            tell you plainly if we cannot. We would rather turn a sale away than take money for a
+            licence we cannot support.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Do I need an account or an email address to use it?</summary>
+        <div class="a">
+          <p>
+            No account, ever. You do need an email address to <em>buy</em> a licence, because that is
+            how the key reaches you. Nothing is stored in the application, and there is no sign-in
+            screen to get past.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Does it send anything about me to the vendor?</summary>
+        <div class="a">
+          <p>
+            No. No analytics, no crash reporting, no remote licence check. Activation is a local
+            cryptographic signature check, and the application contains no code path that phones
+            home. The only outbound traffic is to the hosts you download from, plus the official
+            Microsoft runtime installer if you accept that offer during setup. The
+            <a href="#security">security section</a> lists every destination in full.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Is the trial restricted in any way?</summary>
+        <div class="a">
+          <p>
+            No. The 30-day trial is the full application with every feature enabled. It is a time
+            limit, not a reduced build, and there is no connection cap to unlock. The clock starts
+            when you first run the application, and reinstalling does not reset it.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Will multi-connection downloading really make my download faster?</summary>
+        <div class="a">
+          <p>
+            Sometimes, and it depends on three things you control only partly. When the origin
+            advertises HTTP range support, a single connection is often limited by latency and by
+            per-connection shaping, so splitting a large file across several byte ranges uses more
+            of the available bandwidth. The gain is largest on large files over connections that
+            shape per stream. On small files, on a link that is already saturated, or against a
+            server without range support, there is little or nothing to gain.
+          </p>
+          <p>
+            LaPanda IDM probes for range support before it starts and shows you what it found, so
+            you can tell which of those cases you are in. It will not tell you a file is accelerated
+            when it is not.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Does it genuinely resume, or does it quietly start over?</summary>
+        <div class="a">
+          <p>
+            It resumes. Progress for each byte range is written to a small state file beside the
+            download every two seconds, so a crash, a power cut or a reboot costs you seconds of
+            work rather than the whole file.
+          </p>
+          <p>
+            It also checks before it trusts. Resume sends the <code>ETag</code> or
+            <code>Last-Modified</code> of the file it started on as <code>If-Range</code>, and only
+            accepts a <code>206</code> response whose <code>Content-Range</code> begins exactly where
+            it asked. If the file on the server has been replaced, the partial data is thrown away
+            and the download restarts, rather than appending two different versions into a file that
+            looks finished and is not.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Why does every download show a different number of connections?</summary>
+        <div class="a">
+          <p>
+            Because the decision is made per file, from what the server actually said. Files below
+            about 256&nbsp;KB, and any file from a server that does not advertise range support, are
+            fetched on a single connection because splitting them would not help. Above that,
+            connections are capped at twice your logical processor count, so on a four-core machine
+            the maximum is 8 no matter what the setting says.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Do you support torrents, magnet links and Metalink files?</summary>
+        <div class="a">
+          <p>
+            Not in version 1.0. The BitTorrent, magnet link and Metalink engines are written in this
+            codebase &mdash; metainfo and bencode parsing, HTTP and UDP tracker announces, the peer
+            wire protocol, piece hashing, magnet metadata retrieval and multi-mirror resolution
+            &mdash; but they are not reachable from the interface yet, so the shipping application
+            downloads HTTP and HTTPS URLs only.
+          </p>
+          <p>
+            We are telling you this rather than listing them as features because buying a licence
+            should be based on what you can run today. If torrent support matters to you, it is a
+            reason to wait, and we would rather you make that decision with the facts.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How is this different from Internet Download Manager?</summary>
+        <div class="a">
+          <p>
+            The transfer mechanisms are comparable in design: segmented downloads, a range plan that
+            adapts while running, and resume validation. The differences are commercial and in scope.
+          </p>
+          <p>
+            <b>LaPanda IDM:</b> a one-time <span data-inr="&#8377;575.18" data-usd="US$6">&#8377;575.18</span>
+            licence that never renews, no account, no telemetry, Windows only, and an honest list of
+            what is missing. <b>Internet Download Manager:</b> an annual licence tied to a
+            registered email address, plus browser integration, video capture, torrent support and a
+            macOS build, and two decades of refinement behind it. The full side-by-side, including
+            every row we lose, is in the <a href="#compare">comparison</a>.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Why does Windows warn me that the installer is from an unknown publisher?</summary>
+        <div class="a">
+          <p>
+            Because version 1.0 is not code-signed. A code-signing certificate is an annual cost
+            that a first release from a small vendor often defers, and we would rather be explicit
+            about it than have the warning look like something is wrong.
+          </p>
+          <p>
+            To verify you have the file we published, compare the SHA-256 checksum listed in the
+            <a href="#pricing">pricing section</a> with your downloaded file. If they match, it is
+            our build. Choose <b>More info</b>, then <b>Run anyway</b>, to proceed.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Can I move my licence to a new computer?</summary>
+        <div class="a">
+          <p>
+            A licence is bound to one computer, identified by a machine ID built from your BIOS
+            strings and the system volume serial number. The MAC address is deliberately excluded,
+            because a laptop that switches between Wi-Fi and Ethernet would otherwise lose its
+            licence.
+          </p>
+          <p>
+            A Windows reinstall on the same hardware keeps your licence. New or replaced hardware
+            needs a reissued key &mdash; email us the new machine ID and we will issue it at no
+            charge.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What happens to my data if I uninstall?</summary>
+        <div class="a">
+          <p>
+            Uninstalling removes the program. Because your queue, settings and licence key live in
+            <code>%APPDATA%\IDM</code> rather than in the install folder, the uninstaller asks
+            whether to delete them too. Keeping them is the right choice if you intend to reinstall.
+            Nothing is retained on any server, because there is no server.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Are updates included, and will 2.0 cost more?</summary>
+        <div class="a">
+          <p>
+            Updates for version 1.x are included at no charge and sent by email with release notes.
+            We cannot promise in writing that a future major version will be free &mdash; commercial
+            reality &mdash; but we will not retroactively withdraw features you paid for, and any
+            upgrade path will be published in advance.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What are the refund terms?</summary>
+        <div class="a">
+          <p>
+            Refunds are considered case by case within 30 days of purchase. Contact us with the
+            reason, your order email address and your machine ID. Beyond 30 days a licence is not
+            refundable, although a defect that makes the application unusable is addressed under the
+            licence terms.
+          </p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ BUY ============================ -->
+<section id="buy">
+  <div class="wrap">
+    <div class="buy">
+      <div>
+        <h2>Get LaPanda IDM</h2>
+        <p>
+          Email us with your machine ID and we will send a licence key, usually the same working
+          day. The installer you download for the trial is byte-for-byte the one a licensed customer
+          receives &mdash; buying changes nothing except the licence.
+        </p>
+        <ul class="buy-points">
+          <li><span data-inr="&#8377;575.18" data-usd="US$6">&#8377;575.18</span> once, never renewed</li>
+          <li>Bound to one computer; survives a Windows reinstall</li>
+          <li>Signed key issued by email, usually the same working day</li>
+          <li>Free updates for the life of the product</li>
+          <li>No card details stored by us &mdash; we invoice by email or transfer</li>
+        </ul>
+        <div class="buy-actions">
+          <a class="btn btn-primary" href="mailto:studiozerith@gmail.com?subject=LaPanda%20IDM%201.0%20licence%20purchase&amp;body=Hello%2C%0A%0AI%20would%20like%20to%20purchase%20LaPanda%20IDM%201.0.%0A%0AMy%20machine%20ID%20is%3A%20%28paste%20it%20here%29%0A%0AMy%20order%20email%20address%20is%3A%20%28paste%20it%20here%29%0A%0APayment%20method%20I%20can%20use%3A%20%28bank%20transfer%20%2F%20UPI%20%2F%20other%29%0A%0AThanks%21">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            Email us to purchase
+          </a>
+          <a class="btn btn-ghost" href="downloads/LaPandaIDM-1.0.0-setup.exe" download>Try it free first</a>
+        </div>
+        <p class="buy-region">
+          <b>India:</b> <span data-inr="&#8377;575.18" data-usd="US$6">&#8377;575.18</span> as listed,
+          settled in Indian rupees.
+          <b>Other regions:</b> this page is published worldwide but the price is set for India.
+          Email before paying and we will quote for your region, or tell you if we cannot supply you.
+        </p>
+      </div>
+
+      <div class="buy-right">
+        <div class="amount">
+          <span data-inr="&#8377;575.18" data-usd="US$6">&#8377;575.18</span>
+          <small>one-time, all updates included</small>
+        </div>
+        <div class="rule"></div>
+        <div class="terms">
+          <b>Perpetual licence</b>
+          One computer &middot; no renewal<br>
+          <b data-inr="approx. US$6" data-usd="the &#8377;575.18 India price">approx. US$6</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ STICKY MOBILE BAR ============================ -->
+<div class="buybar" aria-hidden="true">
+  <div class="bb-p">
+    <b data-inr="&#8377;575.18 once" data-usd="US$6 once">&#8377;575.18 once</b>
+    <span>30-day trial first &middot; no account</span>
+  </div>
+  <a class="btn btn-primary" href="downloads/LaPandaIDM-1.0.0-setup.exe" download>Download</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="foot-brand">LaPanda IDM 1.0</div>
+        <div>Developed and sold by Zerith Studio.</div>
+      </div>
+      <div class="foot-links">
+        <a href="mailto:studiozerith@gmail.com">studiozerith@gmail.com</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#compare">Compare</a>
+        <a href="#pricing">Pricing</a>
+        <a href="license.html">Licence (EULA)</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="thanks.html">Order complete</a>
+      </div>
+    </div>
+
+    <p class="legal">
+      <b>&copy; 2026 Zerith Studio.</b> All rights reserved. LaPanda IDM is proprietary closed-source
+      software, licensed to one purchaser for use on one computer, and may not be resold,
+      redistributed, sublicensed or shared. The full terms are in the
+      <a href="license.html">end user licence agreement</a>; data handling is described in the
+      <a href="privacy.html">privacy notice</a>.
+    </p>
+    <p class="legal">
+      Internet Download Manager is a product of Tonec Inc. Zerith Studio is not affiliated with,
+      endorsed by, or sponsored by that product or its vendor, and the comparison on this page is a
+      statement of observed differences, not a claim of equivalence. Application icon artwork is
+      provided by Icons8 under the Icons8 licence and remains the property of Icons8 and its
+      licensors. LaPanda IDM is built on the .NET runtime, copyright Microsoft Corporation, used under
+      the Microsoft .NET Library Licence. All other product names and marks are the property of their
+      respective owners and are used for identification only.
+    </p>
+    <p class="legal">
+      <b>Region:</b> priced for and sold to customers in India. This page is published worldwide and
+      the trial runs anywhere; purchasing and support are handled for Indian customers, and other
+      regions are quoted on request.
+    </p>
+  </div>
+</footer>
+
+<script>
+/* ==========================================================================
+   Progressive enhancement only. The page is complete and readable with
+   JavaScript disabled; nothing below changes what the visitor can read,
+   only which price is shown first and whether we ask about their region.
+
+   No network calls. No third-party code. Nothing identifying is stored:
+   the region answer is a display preference, not an identifier.
+   ========================================================================== */
+(function () {
+  'use strict';
+
+  var STORE_REGION = 'lapanda.region';
+  var bar     = document.getElementById('regionbar');
+  var chip    = document.getElementById('regionchip');
+  var chipLabel = chip ? chip.querySelector('[data-region-label]') : null;
+  var outside = document.getElementById('outside');
+  var nav     = document.getElementById('site-nav');
+  var navBtn  = document.getElementById('navtoggle');
+
+  /* ---------------------------------------------------------------- region */
+
+  /* Reads the visitor's own browser settings. Never contacts a server and
+     never transmits anything; the answer only decides which of two known
+     prices to show first. */
+  function guessRegion() {
+    try {
+      var tz = (Intl.DateTimeFormat().resolvedOptions().timeZone || '');
+      if (/kolkata|calcutta/i.test(tz)) return 'IN';
+
+      var langs = (navigator.languages && navigator.languages.length)
+        ? navigator.languages
+        : [navigator.language || ''];
+
+      for (var i = 0; i < langs.length; i++) {
+        if (/(^|[-_])in$/i.test(langs[i])) return 'IN';
+      }
+    } catch (e) { /* Intl unavailable: fall through and ask. */ }
+    return null;
+  }
+
+  function stored() {
+    try {
+      var v = localStorage.getItem(STORE_REGION);
+      return (v === 'IN' || v === 'OTHER') ? v : null;
+    } catch (e) { return null; }  /* private mode, or storage disabled */
+  }
+
+  function remember(region) {
+    try { localStorage.setItem(STORE_REGION, region); } catch (e) { /* ignore */ }
+  }
+
+  function apply(region, persist) {
+    var inIndia = region === 'IN';
+
+    /* Swap every price string on the page. The India price is what a
+       visitor without JavaScript sees, and what search engines index. */
+    var nodes = document.querySelectorAll('[data-inr][data-usd]');
+    for (var i = 0; i < nodes.length; i++) {
+      nodes[i].textContent = inIndia
+        ? nodes[i].getAttribute('data-inr')
+        : nodes[i].getAttribute('data-usd');
+    }
+
+    if (outside) outside.hidden = inIndia;
+
+    if (chip) {
+      chip.hidden = false;
+      chip.setAttribute('data-region', region);
+      /* Update only the label span. The hidden "change region" text that
+         follows it stays in the accessible name, so the spoken name always
+         contains the visible text. An aria-label would replace the visible
+         text and break voice-control users, who say what they can see. */
+      if (chipLabel) {
+        chipLabel.textContent = inIndia
+          ? 'India \u00b7 INR'
+          : 'International \u00b7 USD';
+      }
+      chip.title = inIndia
+        ? 'Region: India. Prices shown in Indian rupees. Click to change region.'
+        : 'Region: outside India. Prices shown in US dollars for reference only. Click to change region.';
+    }
+
+    /* Reflect the chosen locale on the document for assistive technology. */
+    document.documentElement.lang = inIndia ? 'en-IN' : 'en';
+
+    if (persist) remember(region);
+    bar.hidden = true;
+  }
+
+  if (bar && chip) {
+    var known = stored() || guessRegion();
+
+    if (known) {
+      apply(known, false);
+    } else {
+      /* Cannot tell where the visitor is. Ask once, rather than guessing a
+         currency and being wrong about a price. */
+      bar.hidden = false;
+    }
+
+    bar.addEventListener('click', function (ev) {
+      var btn = ev.target.closest ? ev.target.closest('button[data-region]') : null;
+      if (btn) apply(btn.getAttribute('data-region'), true);
+    });
+
+    chip.addEventListener('click', function () {
+      bar.hidden = false;
+      if (bar.scrollIntoView) bar.scrollIntoView({ block: 'center' });
+      var first = bar.querySelector('button[data-region]');
+      if (first) first.focus();
+    });
+  }
+
+  /* ------------------------------------------------------------------- nav */
+
+  if (nav && navBtn) {
+    navBtn.addEventListener('click', function () {
+      var open = nav.getAttribute('data-open') === 'true';
+      nav.setAttribute('data-open', open ? 'false' : 'true');
+      navBtn.setAttribute('aria-expanded', open ? 'false' : 'true');
+      navBtn.textContent = open ? 'Menu' : 'Close';
+    });
+
+    nav.addEventListener('click', function (ev) {
+      if (!ev.target || ev.target.tagName !== 'A') return;
+      nav.setAttribute('data-open', 'false');
+      navBtn.setAttribute('aria-expanded', 'false');
+      navBtn.textContent = 'Menu';
+    });
+  }
+
+  /* ------------------------------------------------- installer SHA-256 copy */
+
+  var copyBtn = document.getElementById('copysha');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function () {
+      var hash = document.getElementById('sha');
+      if (!hash) return;
+
+      var done = function () {
+        copyBtn.textContent = 'Copied';
+        copyBtn.setAttribute('data-copied', 'true');
+        setTimeout(function () {
+          copyBtn.textContent = 'Copy';
+          copyBtn.setAttribute('data-copied', 'false');
+        }, 2000);
+      };
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(hash.textContent.trim()).then(done, function () {});
+      } else {
+        /* Older browsers: select the text so it can be copied by hand. */
+        var r = document.createRange();
+        r.selectNodeContents(hash);
+        var sel = window.getSelection();
+        if (sel) { sel.removeAllRanges(); sel.addRange(r); }
+      }
+    });
+  }
+})();
+</script>
+
+</body>
+</html>

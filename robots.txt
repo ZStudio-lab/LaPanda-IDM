@@ -1,0 +1,24 @@
+# LaPanda IDM — Zerith Studio
+# Everything served from this directory is public marketing or legal content.
+# There is nothing private, no account area, and no user-uploaded content here.
+
+User-agent: *
+Allow: /
+Disallow: /downloads/
+
+# The installer is linked from the product page on purpose, but there is no
+# value in letting a crawler walk the directory listing of binaries.
+Crawl-delay: 1
+
+# NOTE ON REGION LOCKING
+# The product is priced and sold for customers in India. This site is served
+# worldwide on purpose, so that an out-of-region visitor finds the pricing and
+# the "contact us for your region" path instead of a dead end or a silent
+# mis-price. Do NOT block or geo-redirect by IP, and do not serve a different
+# page to crawlers: the content is identical for everyone, and hiding it would
+# amount to cloaking. Region handling is a client-side notice in index.html,
+# not a server rule.
+
+# No sitemap URL is declared because this site is served from a domain that can
+# change. Once the final domain is set, add it here in the form:
+#   Sitemap: https://DOMAIN/sitemap.xml

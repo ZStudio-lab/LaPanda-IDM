@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank you &mdash; LaPanda IDM</title>
+<meta name="description" content="Your LaPanda IDM purchase is complete. Email us your machine ID to have your licence key issued.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#131315">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="assets/logo.png">
+<style>
+  :root{
+    --bg:#131315;
+    --surface:#1e1e21;
+    --surface-2:#26262b;
+    --line:#34343c;
+    --line-soft:#28282e;
+    --text:#ededee;
+    --muted:#a4a4ae;
+    --faint:#90909b;
+    --accent:#7cb0ff;
+    --accent-2:#9ec5ff;
+    --accent-dim:#26385a;
+    --ok:#63d69b;
+    --max:760px;
+    --radius:12px;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--bg);color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    display:flex;flex-direction:column;min-height:100vh;
+  }
+  img{max-width:100%;height:auto;display:block}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline} /* A link inside running text must be identifiable without relying on colour alone. Standalone interface links (brand, buttons) keep their own treatment. */ p a,li a,dd a,td a,th a,.legal a,.note a,.help a,.steps a{ text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2.5px; } .brand,.btn,.skip{text-decoration:none}
+  h1,h2,h3{letter-spacing:-.02em}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;width:100%}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+  /* ---------- header ---------- */
+  header{border-bottom:1px solid var(--line-soft);background:rgba(19,19,21,.85);backdrop-filter:blur(12px);position:sticky;top:0;z-index:50}
+  .bar{display:flex;align-items:center;gap:10px;height:64px;font-weight:660;font-size:17px}
+  .bar img{width:27px;height:27px;border-radius:6px}
+  .bar a{color:var(--text)}
+
+  main{flex:1;padding:56px 0 64px}
+
+  /* ---------- hero ---------- */
+  .tick{
+    width:56px;height:56px;border-radius:50%;background:rgba(99,214,155,.11);
+    border:1px solid rgba(99,214,155,.32);display:flex;align-items:center;justify-content:center;margin-bottom:26px;
+  }
+  .tick svg{width:26px;height:26px;stroke:var(--ok);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  h1{margin:0 0 16px;font-size:clamp(29px,4.6vw,42px);line-height:1.12;letter-spacing:-.03em;font-weight:700}
+  .lede{font-size:clamp(16.5px,2vw,19px);color:var(--muted);margin:0 0 32px;max-width:58ch}
+
+  /* ---------- receipt ---------- */
+  .receipt{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    overflow:hidden;margin-bottom:34px;
+  }
+  .receipt .row{display:flex;justify-content:space-between;gap:18px;padding:14px 22px;border-bottom:1px solid var(--line-soft);font-size:15px}
+  .receipt .row:last-child{border-bottom:none;background:var(--surface-2)}
+  .receipt .row dt{color:var(--faint);margin:0}
+  .receipt .row dd{margin:0;color:var(--text);font-weight:560;text-align:right}
+  .receipt .row.total dt{color:var(--muted);font-weight:600}
+  .receipt .row.total dd{font-size:19px;font-weight:700;letter-spacing:-.02em}
+
+  /* ---------- key request ---------- */
+  .keycard{
+    background:var(--surface);border:1px solid var(--line);border-radius:14px;
+    padding:30px 30px 26px;margin-bottom:34px;
+  }
+  .keycard h2{margin:0 0 7px;font-size:19px;font-weight:650}
+  .keycard p{margin:0 0 20px;color:var(--muted);font-size:15px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    padding:14px 26px;border-radius:9px;font-size:16px;font-weight:620;
+    border:1px solid transparent;transition:background .14s,border-color .14s;
+  }
+  .btn:hover{text-decoration:none}
+  .btn-primary{background:var(--accent);color:#0b0f16;width:100%}
+  .btn-primary:hover{background:var(--accent-2)}
+  .btn-primary svg{width:19px;height:19px;stroke:#0b0f16;fill:none;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  .note{margin:18px 0 0;font-size:13.5px;color:var(--faint);line-height:1.62}
+  .note b{color:var(--muted)}
+  .note a,.help a{text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+  .note a:hover,.help a:hover{text-decoration-thickness:2px}
+
+  /* ---------- steps ---------- */
+  .kicker{color:var(--faint);font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:14px;display:block}
+  h2.sec{margin:0 0 20px;font-size:clamp(21px,3vw,26px);font-weight:660}
+  ol.steps{list-style:none;counter-reset:s;padding:0;margin:0 0 34px;display:grid;gap:14px}
+  ol.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:20px 22px}
+  ol.steps li::before{
+    content:counter(s);display:flex;align-items:center;justify-content:center;
+    width:26px;height:26px;border-radius:6px;background:var(--accent-dim);color:#cfe0ff;
+    font-size:13px;font-weight:650;margin-bottom:12px;
+  }
+  ol.steps h3{margin:0 0 6px;font-size:15.5px;font-weight:630}
+  ol.steps p{margin:0;color:var(--muted);font-size:15px;line-height:1.6}
+
+  /* ---------- help ---------- */
+  .help{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px}
+  .help h3{margin:0 0 12px;font-size:16px;font-weight:640}
+  .help ul{margin:0;padding-left:19px;color:var(--muted);font-size:15px}
+  .help li{margin-bottom:9px}
+  .help li:last-child{margin-bottom:0}
+  .help li a{word-break:break-all}
+
+  footer{border-top:1px solid var(--line-soft);padding:26px 0 34px;color:var(--faint);font-size:13.5px}
+  footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  footer a{color:var(--faint)}
+  footer a:hover{color:var(--muted)}
+
+  @media (max-width:560px){
+    main{padding:38px 0 46px}
+    .receipt .row{flex-direction:column;gap:3px}
+    .receipt .row dd{text-align:left}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+  @media print{header,.btn{display:none}body{background:#fff;color:#000}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="index.html"><img src="assets/logo.png" alt="">LaPanda IDM</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="tick" role="img" aria-label="Order confirmed">
+      <svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+    </div>
+
+    <h1>Thank you. Your LaPanda IDM licence is on its way.</h1>
+    <p class="lede">
+      We have your order and a confirmation is in your inbox. Your licence key is issued by email
+      rather than handed over automatically, because it is bound to one computer and only LaPanda IDM
+      can tell us which one that is.
+    </p>
+
+    <p class="note" style="border-top:1px solid var(--line-soft);margin:0 0 30px;padding-top:16px">
+      <b>Prices are set for India.</b> If you ordered from outside India, tell us when you reply and
+      we will confirm the amount in your currency before anything further is owed.
+    </p>
+
+    <dl class="receipt">
+      <div class="row"><dt>Product</dt><dd>LaPanda IDM 1.0 &mdash; Windows x64</dd></div>
+      <div class="row"><dt>Licence</dt><dd>One computer, perpetual</dd></div>
+      <div class="row"><dt>Renewal</dt><dd>None. You will not be charged again.</dd></div>
+      <div class="row"><dt>Getting your key</dt><dd>By email, once we have your machine ID</dd></div>
+      <div class="row total"><dt>Total paid</dt><dd>&#8377;575.18 <span style="color:var(--faint);font-weight:450;font-size:15px">(approx. US$6)</span></dd></div>
+    </dl>
+
+    <!-- ================= GET YOUR KEY =================
+         Keys are generated per machine, so this page cannot issue one. The
+         order of the steps below matters: the machine ID only exists once
+         LaPanda IDM has been installed and launched. -->
+    <div class="keycard">
+      <h2>Your key arrives by email</h2>
+      <p>Follow the four steps below, then email us. It takes about two minutes, and usually we reply the same day.</p>
+      <a class="btn btn-primary" href="mailto:studiozerith@gmail.com?subject=LaPanda%20IDM%201.0%20licence%20key&amp;body=Hello%2C%0A%0AHere%20is%20my%20machine%20ID%3A%20%28paste%20it%20here%29%0A%0AMy%20order%20email%20address%20is%3A%20%28paste%20it%20here%29%0A%0AThanks%21">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+        Email studiozerith@gmail.com
+      </a>
+      <p class="note">
+        Send it from the address you ordered with, and paste in the machine ID from step 3.
+        If you would rather not email yet, finish the steps first &mdash; the button above will
+        open a message you can send afterwards.
+      </p>
+    </div>
+
+    <!-- ================= NEXT STEPS ================= -->
+    <span class="kicker">Setting up</span>
+    <h2 class="sec">Four steps, about two minutes</h2>
+    <ol class="steps">
+      <li>
+        <h3>Install LaPanda IDM</h3>
+        <p>Grab the installer from the <a href="index.html#trial">trial page</a> &mdash; it is the same file, and buying a licence does not change it. Windows will ask you to approve the install, because it writes to Program Files. Then press Install. It goes into your Program Files folder and adds a Start menu entry.</p>
+      </li>
+      <li>
+        <h3>Launch LaPanda IDM</h3>
+        <p>Open <b>LaPanda IDM</b> from the Start menu. The installer is not code-signed yet, so Windows SmartScreen will warn you. Choose <b>More info</b>, then <b>Run anyway</b>, on both the installer and the app. If the .NET 8 Desktop Runtime is not already installed, the installer offers to fetch it.</p>
+      </li>
+      <li>
+        <h3>Copy your machine ID</h3>
+        <p>The activation window shows a machine ID for this computer. Use <b>Copy request</b> and keep it &mdash; it is what identifies your licence, and we cannot issue a key without it.</p>
+      </li>
+      <li>
+        <h3>Email us, then paste the key</h3>
+        <p>Email <a href="mailto:studiozerith@gmail.com?subject=LaPanda%20IDM%201.0%20licence%20key&amp;body=Hello%2C%0A%0AHere%20is%20my%20machine%20ID%3A%20%28paste%20it%20here%29%0A%0AMy%20order%20email%20address%20is%3A%20%28paste%20it%20here%29%0A%0AThanks%21">studiozerith@gmail.com</a> with your machine ID from the same address you ordered with. We reply with your licence key; paste it into the activation window and LaPanda IDM is ready. The key stays valid on this computer through a Windows reinstall.</p>
+      </li>
+    </ol>
+
+    <div class="help">
+      <h3>If something goes wrong</h3>
+      <ul>
+        <li>Email <a href="mailto:studiozerith@gmail.com">studiozerith@gmail.com</a> with your order email address and a description of the problem.</li>
+        <li>Keep your machine ID. It is the first thing we will ask for, and without it we cannot issue a key.</li>
+        <li>Your licence is bound to the machine it is activated on. Moving to a new computer needs a reissued key, which we do at no cost.</li>
+      </ul>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>LaPanda IDM &mdash; developed by Zerith Studio.</div>
+    <div>
+      <a href="license.html">Licence (EULA)</a> &middot;
+      <a href="privacy.html">Privacy</a> &middot;
+      <a href="mailto:studiozerith@gmail.com">studiozerith@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
